@@ -1,0 +1,44 @@
+.button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  margin-right: 60px;
+  cursor: pointer;
+  padding: 0;
+}
+
+.button:last-of-type {
+  margin-right: 0;
+}
+
+.name_en {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  color: #000000;
+}
+
+.name_en_active {
+  color: #ea473e;
+  transition: 0.1s linear color;
+}
+
+.name_ru {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  color: #c9c9c9;
+}
+
+.name_ru_active {
+  color: #0f0d0e;
+  transition: 0.2s linear color;
+}
+
+@media all and (max-width: 768px) {
+  .button {
+    margin-right: 30px;
+  }
+}
