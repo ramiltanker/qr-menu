@@ -4,7 +4,7 @@ import { Link, useLocation } from 'react-router-dom';
 import styles from './FilterButton.module.css';
 // Styles
 
-const FilterButton = ({ ruName, enName, path, screenWidth }) => {
+const FilterButton = ({ ruName, enName, path, screenWidth, isBurgerMenuActive, setIsBurgerMenuActive }) => {
   const [buttonHover, setButtonHover] = React.useState();
   const [buttonActive, setButtonActive] = React.useState();
 
@@ -16,6 +16,10 @@ const FilterButton = ({ ruName, enName, path, screenWidth }) => {
 
   const handleButtonUnHover = () => {
     setButtonHover(false);
+  };
+
+  const handleClickButton = () => {
+    setIsBurgerMenuActive(false);
   };
 
   React.useEffect(() => {
@@ -36,6 +40,7 @@ const FilterButton = ({ ruName, enName, path, screenWidth }) => {
       }`}
       onMouseEnter={handleButtonHover}
       onMouseLeave={handleButtonUnHover}
+      onClick={isBurgerMenuActive && handleClickButton}
       to={path}
     >
       <p

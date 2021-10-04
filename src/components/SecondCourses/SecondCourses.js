@@ -10,7 +10,6 @@ import Card from '../Card/Card';
 
 // Constants
 import menu from '../../utils/constants/menu';
-import './transition.css';
 // Constants
 
 // Styles

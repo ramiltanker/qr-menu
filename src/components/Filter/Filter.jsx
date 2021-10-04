@@ -1,17 +1,19 @@
 import React from 'react';
+import { TransitionGroup, CSSTransition } from 'react-transition-group';
 
 // Styles
 import styles from './Filter.module.css';
+import './filter-transition.css';
 // Styles
-
-// Images
-import closeIcon from '../../assets/images/icons/close.svg';
-import burgerIcon from '../../assets/images/icons/burger.svg';
-// Images
 
 // Components
 import FilterButton from '../FilterButton/FilterButton';
+import FilterMobile from '../FilterMobile/FilterMobile';
 // Components
+
+// Images
+import burgerIcon from '../../assets/images/icons/burger.svg';
+// Images
 
 // Constants
 import filterCards from '../../utils/constants/filterCards';
@@ -20,30 +22,46 @@ import filterCards from '../../utils/constants/filterCards';
 const Filter = (props) => {
   const [isBurgerMenuActive, setIsBurgerMenuActive] = React.useState(false);
 
+  const filterRef = React.useRef();
+
   const handleSwitchBurgerMenu = () => {
     setIsBurgerMenuActive(!isBurgerMenuActive);
   };
 
   return (
     <>
-      {props.screenWidth < 635 && !isBurgerMenuActive && (
-        <img src={burgerIcon} alt="burger" className={styles.burger_icon} onClick={handleSwitchBurgerMenu} />
+      {!isBurgerMenuActive && (
+        <CSSTransition
+          in={!isBurgerMenuActive}
+          timeout={800}
+          mountOnEnter
+          unmountOnExit
+          classNames="burger-icon"
+          appear={true}
+        >
+          <img src={burgerIcon} alt="burger" className={styles.burger_icon} onClick={handleSwitchBurgerMenu} />
+        </CSSTransition>
       )}
-      {props.screenWidth < 635 && isBurgerMenuActive && (
-        <div className={props.screenWidth < 635 && styles.container}>
-          {props.screenWidth < 635 && (
-            <img src={closeIcon} alt="close" className={styles.close_icon} onClick={handleSwitchBurgerMenu} />
-          )}
-          <div className={props.screenWidth < 635 ? styles.filter_mobile : styles.filter}>
-            {filterCards.map(({ enName, ruName, path }, index) => {
-              return (
-                <FilterButton enName={enName} ruName={ruName} key={index} path={path} screenWidth={props.screenWidth} />
-              );
-            })}
-          </div>
-        </div>
-      )}
-      {props.screenWidth > 635 && (
+      {props.screenWidth < 635 ? (
+        <CSSTransition
+          in={isBurgerMenuActive}
+          timeout={300}
+          mountOnEnter
+          unmountOnExit
+          classNames="filter"
+          appear={true}
+          nodeRef={filterRef}
+        >
+          <FilterMobile
+            key={'filter'}
+            filterRef={filterRef}
+            handleSwitchBurgerMenu={handleSwitchBurgerMenu}
+            screenWidth={props.screenWidth}
+            isBurgerMenuActive={isBurgerMenuActive}
+            setIsBurgerMenuActive={setIsBurgerMenuActive}
+          />
+        </CSSTransition>
+      ) : (
         <div className={styles.filter}>
           {filterCards.map(({ enName, ruName, path }, index) => {
             return (

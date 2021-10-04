@@ -20,6 +20,7 @@ import './transition.css';
 
 function App() {
   const [isLoaderActive, setIsLoaderActive] = React.useState(true);
+  const [isTextActive, setIsTextActive] = React.useState(true);
 
   const location = useLocation();
   const history = useHistory();
@@ -30,12 +31,6 @@ function App() {
   function updateScreenWidth() {
     setScreenWidth(window.innerWidth);
   }
-
-  React.useEffect(() => {
-    setTimeout(() => {
-      setIsLoaderActive(false);
-    }, 1);
-  }, []);
 
   React.useEffect(() => {
     history.push('/first-courses');
@@ -50,9 +45,12 @@ function App() {
   return (
     <>
       {isLoaderActive ? (
-        <CSSTransition in={true} timeout={300} mountOnEnter unmountOnExit classNames="loader">
-          <Preloader isLoaderActive={isLoaderActive} />
-        </CSSTransition>
+        <Preloader
+          setIsLoaderActive={setIsLoaderActive}
+          isLoaderActive={isLoaderActive}
+          setIsTextActive={setIsTextActive}
+          isTextActive={isTextActive}
+        />
       ) : (
         <>
           <Header />

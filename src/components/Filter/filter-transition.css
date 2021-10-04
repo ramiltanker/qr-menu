@@ -1,0 +1,71 @@
+@keyframes show-filter {
+  0% {
+    opacity: 0;
+    transform: translateX(200px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+@keyframes hide-filter {
+  0% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateX(200px);
+  }
+}
+
+.filter-appear,
+.filter-enter {
+  opacity: 0;
+}
+
+.filter-appear-active,
+.filter-enter-active {
+  opacity: 1;
+  animation: show-filter 300ms linear;
+}
+.filter-exit {
+  opacity: 1;
+}
+
+.filter-exit,
+.filter-exit-active {
+  opacity: 0;
+  animation: hide-filter 300ms linear;
+}
+
+.filter-exit-done {
+  opacity: 0;
+}
+
+.burger-icon-appear,
+.burger-icon-enter {
+  opacity: 0;
+}
+
+.burger-icon-appear-active,
+.burger-icon-enter-active {
+  opacity: 1;
+  transition: opacity 800ms linear;
+}
+.burger-icon-exit {
+  opacity: 1;
+}
+
+.burger-icon-exit,
+.burger-icon-exit-active {
+  opacity: 0;
+  transition: opacity 800ms linear;
+}
+
+.burger-icon-exit-done {
+  opacity: 0;
+}

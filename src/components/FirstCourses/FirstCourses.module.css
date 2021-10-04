@@ -45,4 +45,7 @@
   .box {
     grid-template-columns: 300px;
   }
+  .button_more {
+    width: 300px;
+  }
 }

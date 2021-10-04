@@ -40,3 +40,12 @@
 .button_more_inactive {
   display: none;
 }
+
+@media all and (max-width: 660px) {
+  .box {
+    grid-template-columns: 300px;
+  }
+  .button_more {
+    width: 300px;
+  }
+}
