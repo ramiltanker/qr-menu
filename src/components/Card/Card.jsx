@@ -19,8 +19,7 @@ const Card = ({ name, text, price }) => {
         <p className={styles.text}>{text}</p>
       </div>
       <div className={styles.box}>
-        <p className={styles.price}>{price}тг</p>
-        <BasketButton />
+        <p className={styles.price}>{price} тг</p>
       </div>
     </div>
   );
