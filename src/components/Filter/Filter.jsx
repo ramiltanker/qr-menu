@@ -30,7 +30,7 @@ const Filter = (props) => {
 
   return (
     <>
-      {!isBurgerMenuActive && (
+      {props.screenWidth < 635 && !isBurgerMenuActive && (
         <CSSTransition
           in={!isBurgerMenuActive}
           timeout={800}
