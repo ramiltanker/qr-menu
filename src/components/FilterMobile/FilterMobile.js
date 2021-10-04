@@ -31,7 +31,9 @@ function FilterMobile({ handleSwitchBurgerMenu, screenWidth, isBurgerMenuActive,
           classNames="close-icon"
           appear={true}
         >
-          <img src={closeIcon} alt="close" className={styles.close_icon} onClick={handleSwitchBurgerMenu} />
+          {isBurgerMenuActive && (
+            <img src={closeIcon} alt="close" className={styles.close_icon} onClick={handleSwitchBurgerMenu} />
+          )}
         </CSSTransition>
         <div className={styles.filter_mobile}>
           {filterCards.map(({ enName, ruName, path }, index) => {
