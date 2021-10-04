@@ -3,10 +3,51 @@
   flex-direction: column;
   justify-content: center;
   background-color: rgba(255, 255, 255, 0);
-  border: none;
   margin-right: 60px;
   cursor: pointer;
   padding: 0;
+  text-decoration: none;
+  padding-bottom: 5px;
+}
+
+.button_mobile {
+  display: flex;
+  width: auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  margin-right: 20px;
+  background-color: rgba(255, 255, 255, 0);
+  cursor: pointer;
+  padding: 0;
+  text-decoration: none;
+  padding-bottom: 5px;
+}
+
+.button_mobile_hover {
+  border-width: 3px;
+  border-color: #ffffff;
+  border-style: solid;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+}
+
+.button_mobile:first-of-type {
+  margin-top: 30px;
+}
+
+.button_hover {
+  border-width: 3px;
+  border-color: #ea473e;
+  border-style: solid;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+}
+
+.button:first-of-type {
+  margin-left: 100px;
 }
 
 .button:last-of-type {
@@ -18,6 +59,13 @@
   font-weight: 500;
   font-size: 20px;
   color: #000000;
+}
+
+.name_en_mobile {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  color: #ffffff;
 }
 
 .name_en_active {
@@ -32,6 +80,13 @@
   color: #c9c9c9;
 }
 
+.name_ru_mobile {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  color: #000000;
+}
+
 .name_ru_active {
   color: #0f0d0e;
   transition: 0.2s linear color;
@@ -40,5 +95,14 @@
 @media all and (max-width: 768px) {
   .button {
     margin-right: 30px;
+  }
+  .button:first-of-type {
+    margin-left: 0px;
+  }
+}
+
+@media all and (max-width: 690px) {
+  .button {
+    margin-right: 20px;
   }
 }

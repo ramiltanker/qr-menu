@@ -1,27 +1,33 @@
 const filterCards = [
   {
     enName: 'First courses',
-    ruName: 'Первые блюда'
+    ruName: 'Первые блюда',
+    path: '/first-courses'
   },
   {
     enName: 'Second courses',
-    ruName: 'Вторые блюда'
+    ruName: 'Вторые блюда',
+    path: '/second-courses'
   },
   {
     enName: 'Pizza',
-    ruName: 'Пицца'
+    ruName: 'Пицца',
+    path: '/pizza'
   },
   {
     enName: 'Burgers',
-    ruName: 'Бургеры'
+    ruName: 'Бургеры',
+    path: '/burgers'
   },
   {
     enName: 'Salads',
-    ruName: 'Салаты'
+    ruName: 'Салаты',
+    path: '/salads'
   },
   {
     enName: 'Desserts',
-    ruName: 'Дессерты'
+    ruName: 'Дессерты',
+    path: '/deserts'
   }
 ];
 

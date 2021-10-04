@@ -5,10 +5,7 @@
 }
 
 .container {
-  margin: 0 auto;
-  padding: 0;
-  max-width: 1280px;
-  width: 100%;
+  margin-left: 100px;
 }
 
 .subtitle {
@@ -64,6 +61,7 @@
 
 @media all and (max-width: 768px) {
   .container {
-    margin-left: 30px ;
+    max-width: 768px;
+    margin-left: 50px;
   }
 }
