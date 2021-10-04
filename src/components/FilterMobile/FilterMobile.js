@@ -1,4 +1,5 @@
 import React from 'react';
+import { CSSTransition } from 'react-transition-group';
 
 // Стили
 import styles from './FilterMobile.module.css';
@@ -22,7 +23,16 @@ function FilterMobile({ handleSwitchBurgerMenu, screenWidth, isBurgerMenuActive,
     <>
       <Overlay />
       <div className={styles.container} key={'filter'} ref={filterRef}>
-        <img src={closeIcon} alt="close" className={styles.close_icon} onClick={handleSwitchBurgerMenu} />
+        <CSSTransition
+          in={isBurgerMenuActive}
+          timeout={800}
+          mountOnEnter
+          unmountOnExit
+          classNames="close-icon"
+          appear={true}
+        >
+          <img src={closeIcon} alt="close" className={styles.close_icon} onClick={handleSwitchBurgerMenu} />
+        </CSSTransition>
         <div className={styles.filter_mobile}>
           {filterCards.map(({ enName, ruName, path }, index) => {
             return (
