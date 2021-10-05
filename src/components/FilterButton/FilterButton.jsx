@@ -40,7 +40,13 @@ const FilterButton = ({ ruName, enName, path, screenWidth, isBurgerMenuActive, s
       }`}
       onMouseEnter={handleButtonHover}
       onMouseLeave={handleButtonUnHover}
-      onClick={isBurgerMenuActive && handleClickButton}
+      onClick={
+        isBurgerMenuActive
+          ? handleClickButton
+          : () => {
+              return;
+            }
+      }
       to={path}
     >
       <p
