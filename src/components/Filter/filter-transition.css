@@ -1,23 +1,55 @@
-@keyframes show-filter {
+@-webkit-keyframes show-filter {
   0% {
     opacity: 0;
+    -webkit-transform: translateX(200px);
     transform: translateX(200px);
   }
 
   100% {
     opacity: 1;
+    -webkit-transform: translateX(0px);
     transform: translateX(0px);
+  }
+}
+
+@keyframes show-filter {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(200px);
+    transform: translateX(200px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px);
+  }
+}
+
+@-webkit-keyframes hide-filter {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px);
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: translateX(200px);
+    transform: translateX(200px);
   }
 }
 
 @keyframes hide-filter {
   0% {
     opacity: 1;
+    -webkit-transform: translateX(0px);
     transform: translateX(0px);
   }
 
   100% {
     opacity: 0;
+    -webkit-transform: translateX(200px);
     transform: translateX(200px);
   }
 }
@@ -30,6 +62,7 @@
 .filter-appear-active,
 .filter-enter-active {
   opacity: 1;
+  -webkit-animation: show-filter 300ms linear;
   animation: show-filter 300ms linear;
 }
 .filter-exit {
@@ -39,6 +72,7 @@
 .filter-exit,
 .filter-exit-active {
   opacity: 0;
+  -webkit-animation: hide-filter 300ms linear;
   animation: hide-filter 300ms linear;
 }
 
@@ -54,6 +88,8 @@
 .burger-icon-appear-active,
 .burger-icon-enter-active {
   opacity: 1;
+  -webkit-transition: opacity 800ms linear;
+  -o-transition: opacity 800ms linear;
   transition: opacity 800ms linear;
 }
 .burger-icon-exit {
@@ -63,6 +99,8 @@
 .burger-icon-exit,
 .burger-icon-exit-active {
   opacity: 0;
+  -webkit-transition: opacity 800ms linear;
+  -o-transition: opacity 800ms linear;
   transition: opacity 800ms linear;
 }
 
@@ -78,6 +116,8 @@
 .close-icon-appear-active,
 .close-icon-enter-active {
   opacity: 1;
+  -webkit-transition: opacity 800ms linear;
+  -o-transition: opacity 800ms linear;
   transition: opacity 800ms linear;
 }
 .close-icon-exit {
@@ -87,6 +127,8 @@
 .close-icon-exit,
 .close-icon-exit-active {
   opacity: 0;
+  -webkit-transition: opacity 800ms linear;
+  -o-transition: opacity 800ms linear;
   transition: opacity 800ms linear;
 }
 

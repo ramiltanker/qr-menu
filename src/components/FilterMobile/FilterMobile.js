@@ -27,9 +27,8 @@ function FilterMobile({ handleSwitchBurgerMenu, screenWidth, isBurgerMenuActive,
       <div className={styles.container} key={'filter'} ref={filterRef}>
         <CSSTransition
           in={isBurgerMenuActive}
-          timeout={800}
+          timeout={10000}
           mountOnEnter
-          unmountOnExit
           key="close-icon"
           classNames="close-icon"
           appear={true}
