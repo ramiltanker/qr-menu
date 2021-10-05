@@ -36,7 +36,7 @@ function FilterMobile({ handleSwitchBurgerMenu, screenWidth, isBurgerMenuActive,
         >
           <img
             src={closeIcon}
-            alt="close"
+            alt="close-icon"
             className={styles.close_icon}
             onClick={handleSwitchBurgerMenu}
             ref={closeIconRef}

@@ -88,9 +88,9 @@
 .burger-icon-appear-active,
 .burger-icon-enter-active {
   opacity: 1;
-  -webkit-transition: opacity 800ms linear;
-  -o-transition: opacity 800ms linear;
-  transition: opacity 800ms linear;
+  -webkit-transition: opacity 300ms linear;
+  -o-transition: opacity 300ms linear;
+  transition: opacity 300ms linear;
 }
 .burger-icon-exit {
   opacity: 1;
@@ -99,9 +99,9 @@
 .burger-icon-exit,
 .burger-icon-exit-active {
   opacity: 0;
-  -webkit-transition: opacity 800ms linear;
-  -o-transition: opacity 800ms linear;
-  transition: opacity 800ms linear;
+  -webkit-transition: opacity 300ms linear;
+  -o-transition: opacity 300ms linear;
+  transition: opacity 300ms linear;
 }
 
 .burger-icon-exit-done {
@@ -116,9 +116,9 @@
 .close-icon-appear-active,
 .close-icon-enter-active {
   opacity: 1;
-  -webkit-transition: opacity 800ms linear;
-  -o-transition: opacity 800ms linear;
-  transition: opacity 800ms linear;
+  -webkit-transition: opacity 300ms linear;
+  -o-transition: opacity 300ms linear;
+  transition: opacity 300ms linear;
 }
 .close-icon-exit {
   opacity: 1;
@@ -127,9 +127,9 @@
 .close-icon-exit,
 .close-icon-exit-active {
   opacity: 0;
-  -webkit-transition: opacity 800ms linear;
-  -o-transition: opacity 800ms linear;
-  transition: opacity 800ms linear;
+  -webkit-transition: opacity 300ms linear;
+  -o-transition: opacity 300ms linear;
+  transition: opacity 300ms linear;
 }
 
 .close-icon-exit-done {
