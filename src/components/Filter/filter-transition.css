@@ -69,27 +69,3 @@
 .burger-icon-exit-done {
   opacity: 0;
 }
-
-.close-icon-appear,
-.close-icon-enter {
-  opacity: 0;
-}
-
-.close-icon-appear-active,
-.close-icon-enter-active {
-  opacity: 1;
-  transition: opacity 800ms linear;
-}
-.close-icon-exit {
-  opacity: 1;
-}
-
-.close-icon-exit,
-.close-icon-exit-active {
-  opacity: 0;
-  transition: opacity 800ms linear;
-}
-
-.close-icon-exit-done {
-  opacity: 0;
-}
