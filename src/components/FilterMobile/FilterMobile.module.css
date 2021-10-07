@@ -1,10 +1,11 @@
-.close_icon {
+.container {
   position: fixed;
-  z-index: 10;
+  z-index: 3;
   top: 0;
-  right: 250px;
-  width: 50px;
-  height: 50px;
+  right: 0;
+  max-width: 100%;
+  width: 300px;
+  height: 100vh;
 }
 
 .filter_mobile {
@@ -17,14 +18,12 @@
   background-color: #ea473e;
 }
 
-.container {
-  position: fixed;
-  z-index: 3;
+.close_icon {
+  position: absolute;
   top: 0;
-  right: 0;
-  max-width: 100%;
-  width: 300px;
-  height: 100vh;
+  left: 5px;
+  width: 50px;
+  height: 50px;
 }
 
 @media all and (max-width: 425px) {

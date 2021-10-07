@@ -25,24 +25,24 @@ function FilterMobile({ handleSwitchBurgerMenu, screenWidth, isBurgerMenuActive,
     <>
       <Overlay />
       <div className={styles.container} key={'filter'} ref={filterRef}>
-        <CSSTransition
-          in={isBurgerMenuActive}
-          timeout={10000}
-          mountOnEnter
-          key="close-icon"
-          classNames="close-icon"
-          appear={true}
-          nodeRef={closeIconRef}
-        >
-          <img
-            src={closeIcon}
-            alt="close-icon"
-            className={styles.close_icon}
-            onClick={handleSwitchBurgerMenu}
-            ref={closeIconRef}
-          />
-        </CSSTransition>
         <div className={styles.filter_mobile}>
+          <CSSTransition
+            in={isBurgerMenuActive}
+            timeout={10000}
+            mountOnEnter
+            key="close-icon"
+            classNames="close-icon"
+            appear={true}
+            nodeRef={closeIconRef}
+          >
+            <img
+              src={closeIcon}
+              alt="close-icon"
+              className={styles.close_icon}
+              onClick={handleSwitchBurgerMenu}
+              ref={closeIconRef}
+            />
+          </CSSTransition>
           {filterCards.map(({ enName, ruName, path }, index) => {
             return (
               <FilterButton
