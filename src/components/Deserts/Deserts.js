@@ -26,7 +26,7 @@ function Deserts(props) {
     if (props.screenWidth >= 1280) {
       setRenderCards(deserts.slice(0, 12));
     }
-    if (props.screenWidth <= 1024) {
+    if (props.screenWidth <= 1090) {
       setRenderCards(deserts.slice(0, 6));
     }
     if (props.screenWidth <= 425) {
@@ -46,7 +46,7 @@ function Deserts(props) {
     if (props.screenWidth >= 1280) {
       deserts.length > 12 ? setShowMoreButton(true) : setShowMoreButton(false);
     }
-    if (props.screenWidth <= 1024) {
+    if (props.screenWidth <= 1090) {
       deserts.length > 6 ? setShowMoreButton(true) : setShowMoreButton(false);
     }
     if (props.screenWidth <= 425) {
@@ -61,7 +61,7 @@ function Deserts(props) {
         setShowMoreButton(false);
       }
     }
-    if (props.screenWidth <= 1024) {
+    if (props.screenWidth <= 1090) {
       setRenderCards(deserts.slice(0, renderCards.length + 2));
       if (renderCards.length >= deserts.length - 2) {
         setShowMoreButton(false);

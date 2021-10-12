@@ -9,7 +9,8 @@
 
 .box {
   display: grid;
-  grid-template-columns: 300px 300px;
+  width: 100%;
+  grid-template-columns: 300px 300px 300px;
   gap: 50px;
   grid-template-rows: auto;
   justify-content: center;
@@ -39,6 +40,12 @@
 
 .button_more_inactive {
   display: none;
+}
+
+@media all and (max-width: 1040px) {
+  .box {
+    grid-template-columns: 300px 300px;
+  }
 }
 
 @media all and (max-width: 660px) {

@@ -26,7 +26,7 @@ function FirstCourses(props) {
     if (props.screenWidth >= 1280) {
       setRenderCards(firstCourses.slice(0, 12));
     }
-    if (props.screenWidth <= 1024) {
+    if (props.screenWidth <= 1090) {
       setRenderCards(firstCourses.slice(0, 6));
     }
     if (props.screenWidth <= 425) {
@@ -46,7 +46,7 @@ function FirstCourses(props) {
     if (props.screenWidth >= 1280) {
       firstCourses.length > 12 ? setShowMoreButton(true) : setShowMoreButton(false);
     }
-    if (props.screenWidth <= 1024) {
+    if (props.screenWidth <= 1090) {
       firstCourses.length > 6 ? setShowMoreButton(true) : setShowMoreButton(false);
     }
     if (props.screenWidth <= 425) {
@@ -61,7 +61,7 @@ function FirstCourses(props) {
         setShowMoreButton(false);
       }
     }
-    if (props.screenWidth <= 1024) {
+    if (props.screenWidth <= 1090) {
       setRenderCards(firstCourses.slice(0, renderCards.length + 2));
       if (renderCards.length >= firstCourses.length - 2) {
         setShowMoreButton(false);
