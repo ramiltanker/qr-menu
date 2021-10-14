@@ -1,26 +1,17 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
-// Styles
-import styles from './FilterButton.module.css';
-// Styles
-
 // Redux
-import { GET_CATEGORY_FROM_BUTTON } from '../../redux/actions/filter';
+import { GET_SUBCATEGORY_FROM_BUTTON, DELETE_CATEGORY_FROM_BUTTON } from '../../redux/actions/filter';
 
 import { useDispatch } from 'react-redux';
 // Redux
 
-const FilterButton = ({
-  ruName,
-  enName,
-  path,
-  screenWidth,
-  isBurgerMenuActive,
-  setIsBurgerMenuActive,
-  categories,
-  handleSwitchBurgerMenu
-}) => {
+// Styles
+import styles from './CategoryButton.module.css';
+// Styles
+
+function CategoryButton({ ruName, enName, path, isBurgerMenuActive, setIsBurgerMenuActive, subCategories }) {
   const [buttonHover, setButtonHover] = React.useState();
   const [buttonActive, setButtonActive] = React.useState();
 
@@ -37,10 +28,11 @@ const FilterButton = ({
   };
 
   const handleClickButton = () => {
-    if (categories) {
-      dispatch({ type: GET_CATEGORY_FROM_BUTTON, category: categories });
+    if (subCategories) {
+      dispatch({ type: GET_SUBCATEGORY_FROM_BUTTON, subCategory: subCategories });
       return;
     }
+    dispatch({ type: DELETE_CATEGORY_FROM_BUTTON });
     setIsBurgerMenuActive(false);
   };
 
@@ -67,6 +59,6 @@ const FilterButton = ({
       <p className={`${styles.name_ru} ${buttonActive | buttonHover ? styles.name_ru_active : ''}`}>{ruName}</p>
     </Link>
   );
-};
+}
 
-export default FilterButton;
+export default CategoryButton;

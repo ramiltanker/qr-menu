@@ -1,0 +1,34 @@
+@keyframes show-back-icon {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes hide-back-icon {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Такая система классов позволяет элементам появляться плавно */
+/* А вся анимация при монтированнии срабатывает "между" этими классами */
+.back-icon-enter-active {
+  animation: show-back-icon 300ms linear;
+}
+
+/* Этот класс и следующий сработают при размонтировании */
+.back-icon-exit {
+}
+
+/* Аналогично и с размонтированием — это позволяет элементам плавно исчезать  */
+.back-icon-exit-active {
+  animation: hide-back-icon 300ms linear;
+}

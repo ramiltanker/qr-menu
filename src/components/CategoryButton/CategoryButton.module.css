@@ -102,7 +102,6 @@
   }
   .button:last-of-type {
     margin-right: 20px;
-    margin-bottom: 20px;
   }
   .button:hover {
     border-width: 3px;

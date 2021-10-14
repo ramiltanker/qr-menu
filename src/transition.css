@@ -56,7 +56,7 @@
 
 /* Аналогично и с размонтированием — это позволяет элементам плавно исчезать  */
 .card-exit-active {
-  animation: delete-note 300ms linear forwards;
+  animation: 300ms linear forwards;
 }
 
 .loader-appear,

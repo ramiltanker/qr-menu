@@ -25,6 +25,11 @@ const Filter = (props) => {
   const filterRef = React.useRef();
 
   const handleSwitchBurgerMenu = () => {
+    if (!isBurgerMenuActive) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'scroll';
+    }
     setIsBurgerMenuActive(!isBurgerMenuActive);
   };
 

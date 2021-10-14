@@ -1,17 +1,3 @@
-@-webkit-keyframes show-filter {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateX(200px);
-    transform: translateX(200px);
-  }
-
-  100% {
-    opacity: 1;
-    -webkit-transform: translateX(0px);
-    transform: translateX(0px);
-  }
-}
-
 @keyframes show-filter {
   0% {
     opacity: 0;
@@ -23,20 +9,6 @@
     opacity: 1;
     -webkit-transform: translateX(0px);
     transform: translateX(0px);
-  }
-}
-
-@-webkit-keyframes hide-filter {
-  0% {
-    opacity: 1;
-    -webkit-transform: translateX(0px);
-    transform: translateX(0px);
-  }
-
-  100% {
-    opacity: 0;
-    -webkit-transform: translateX(200px);
-    transform: translateX(200px);
   }
 }
 
