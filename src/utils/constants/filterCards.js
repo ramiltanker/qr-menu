@@ -10,6 +10,11 @@ const filterCards = [
     path: '/second-courses',
     categories: [
       {
+        ruName: 'Стейки',
+        enName: 'Steaks',
+        path: '/steaks'
+      },
+      {
         ruName: 'Из рыбы',
         enName: 'Fish dishes',
         path: '/fish'
@@ -28,6 +33,11 @@ const filterCards = [
         ruName: 'Из курицы',
         enName: 'Chicken dishes',
         path: '/chicken'
+      },
+      {
+        ruName: 'Колбаски на гриле',
+        enName: 'Grilled sausages',
+        path: '/grilled-sausages'
       }
     ]
   },
@@ -47,6 +57,11 @@ const filterCards = [
     path: '/salads'
   },
   {
+    enName: 'Warm salads',
+    ruName: 'Тёплые салаты',
+    path: '/warm-salads'
+  },
+  {
     enName: 'Desserts',
     ruName: 'Дессерты',
     path: '/deserts'
@@ -62,19 +77,14 @@ const filterCards = [
     path: '/focaccia'
   },
   {
+    enName: 'Хлеб',
+    ruName: 'Bread',
+    path: '/bread'
+  },
+  {
     enName: 'Snacks',
     ruName: 'Закуски',
     path: '/snacks'
-  },
-  {
-    enName: 'Warm salads',
-    ruName: 'Тёплые салаты',
-    path: '/warm-salads'
-  },
-  {
-    enName: 'Beer snacks',
-    ruName: 'К пиву',
-    path: '/to-beer'
   },
   {
     enName: 'Fries',
@@ -99,10 +109,10 @@ const filterCards = [
   {
     enName: 'Bar menu',
     ruName: 'Алкогольное меню',
-    path: '/alcoholic-menu',
+    path: '/bar-menu',
     categories: [
       {
-        ruName: 'Коктели',
+        ruName: 'Коктейли',
         enName: 'Cocktails',
         path: '/сocktails'
       },
@@ -159,6 +169,90 @@ const filterCards = [
         path: '/tequila'
       }
     ]
+  },
+  {
+    enName: 'Soft drinks',
+    ruName: 'Безалкогольное меню',
+    path: '/soft-drinks',
+    categories: [
+      {
+        ruName: 'Безалкогольные коктейли',
+        enName: 'Non-alcoholic cocktails',
+        path: '/non-alcoholic-cocktails'
+      },
+      {
+        ruName: 'Смузи',
+        enName: 'Smoothie',
+        path: '/smoothie'
+      },
+      {
+        ruName: 'Домашние напитки',
+        enName: 'Homemade drinks',
+        path: '/homemade-drinks'
+      },
+      {
+        ruName: 'Молочные коктейли',
+        enName: 'Milkshakes',
+        path: '/milkshakes'
+      },
+      {
+        ruName: 'соки свежевыжатые',
+        enName: 'freshly squeezed juices',
+        path: '/freshly-squeezed-juices'
+      },
+      {
+        ruName: 'Фирменные лимонады',
+        enName: 'Branded lemonades',
+        path: '/branded-lemonades'
+      },
+      {
+        ruName: 'Безалгольные напитки',
+        enName: 'Alcohol-free drinks',
+        path: '/alcohol-free-drinks'
+      }
+    ]
+  },
+  {
+    enName: 'Beer',
+    ruName: 'Пиво',
+    path: '/beer',
+    categories: [
+      {
+        ruName: 'Разливное',
+        enName: 'Draft beer',
+        path: '/draft-beer'
+      },
+      {
+        ruName: 'Бутылочное',
+        enName: 'Bottled beer',
+        path: '/bottled-beer'
+      }
+    ]
+  },
+  {
+    enName: 'Beer snacks',
+    ruName: 'К пиву',
+    path: '/to-beer'
+  },
+  {
+    enName: 'Tea',
+    ruName: 'Чай',
+    path: '/tea'
+  },
+  {
+    enName: 'Coffee',
+    ruName: 'Кофе',
+    path: '/coffee'
+  },
+  {
+    enName: 'For tea',
+    ruName: 'К чаю',
+    path: '/for-tea'
+  },
+  {
+    enName: 'Desserts',
+    ruName: 'Десерты',
+    path: '/desserts'
   }
 ];
 

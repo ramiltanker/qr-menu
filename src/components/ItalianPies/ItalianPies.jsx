@@ -13,63 +13,63 @@ import menu from '../../utils/constants/menu';
 // Constants
 
 // Styles
-import styles from './SecondCourses.module.css';
+import styles from './ItalianPies.module.css';
 // Styles
 
-function SecondCourses(props) {
+function ItalianPies(props) {
   const [renderCards, setRenderCards] = React.useState([]);
   const [isShowMoreButton, setShowMoreButton] = React.useState(true);
 
-  const secondCourses = menu.secondCourses;
+  const italianPies = menu.italianPies;
 
   React.useEffect(() => {
     if (props.screenWidth >= 1280) {
-      setRenderCards(secondCourses.slice(0, 12));
+      setRenderCards(italianPies.slice(0, 12));
     }
     if (props.screenWidth <= 1090) {
-      setRenderCards(secondCourses.slice(0, 6));
+      setRenderCards(italianPies.slice(0, 6));
     }
     if (props.screenWidth <= 425) {
-      setRenderCards(secondCourses.slice(0, 4));
+      setRenderCards(italianPies.slice(0, 4));
     }
-    if (renderCards.length === secondCourses.length) {
+    if (renderCards.length === italianPies.length) {
       setShowMoreButton(false);
     } else {
       setShowMoreButton(true);
     }
-  }, [secondCourses, props.screenWidth]);
+  }, [italianPies, props.screenWidth]);
 
   React.useEffect(() => {
-    if (secondCourses.length === 0) {
+    if (italianPies.length === 0) {
       setShowMoreButton(false);
     }
     if (props.screenWidth >= 1280) {
-      secondCourses.length > 12 ? setShowMoreButton(true) : setShowMoreButton(false);
+      italianPies.length > 12 ? setShowMoreButton(true) : setShowMoreButton(false);
     }
     if (props.screenWidth <= 1090) {
-      secondCourses.length > 6 ? setShowMoreButton(true) : setShowMoreButton(false);
+      italianPies.length > 6 ? setShowMoreButton(true) : setShowMoreButton(false);
     }
     if (props.screenWidth <= 425) {
-      secondCourses.length > 5 ? setShowMoreButton(true) : setShowMoreButton(false);
+      italianPies.length > 5 ? setShowMoreButton(true) : setShowMoreButton(false);
     }
-  }, [props.screenWidth, secondCourses.length]);
+  }, [props.screenWidth, italianPies.length]);
 
   function handleShowFilms() {
     if (props.screenWidth >= 1280) {
-      setRenderCards(secondCourses.slice(0, renderCards.length + 3));
-      if (renderCards.length >= secondCourses.length - 3) {
+      setRenderCards(italianPies.slice(0, renderCards.length + 3));
+      if (renderCards.length >= italianPies.length - 3) {
         setShowMoreButton(false);
       }
     }
     if (props.screenWidth <= 1090) {
-      setRenderCards(secondCourses.slice(0, renderCards.length + 2));
-      if (renderCards.length >= secondCourses.length - 2) {
+      setRenderCards(italianPies.slice(0, renderCards.length + 2));
+      if (renderCards.length >= italianPies.length - 2) {
         setShowMoreButton(false);
       }
     }
     if (props.screenWidth <= 425) {
-      setRenderCards(secondCourses.slice(0, renderCards.length + 2));
-      if (renderCards.length >= secondCourses.length - 2) {
+      setRenderCards(italianPies.slice(0, renderCards.length + 2));
+      if (renderCards.length >= italianPies.length - 2) {
         setShowMoreButton(false);
       }
     }
@@ -97,4 +97,4 @@ function SecondCourses(props) {
   );
 }
 
-export default SecondCourses;
+export default ItalianPies;

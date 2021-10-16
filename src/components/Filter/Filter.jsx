@@ -25,16 +25,18 @@ const Filter = (props) => {
   const filterRef = React.useRef();
 
   const handleSwitchBurgerMenu = () => {
-    if (!isBurgerMenuActive) {
+    setIsBurgerMenuActive(!isBurgerMenuActive);
+  };
+
+  React.useEffect(() => {
+    if (isBurgerMenuActive) {
       document.body.style.overflow = 'hidden';
     } else {
       document.body.style.overflow = 'scroll';
     }
-    setIsBurgerMenuActive(!isBurgerMenuActive);
-  };
-
+  });
   return (
-    <>
+    <div className={styles.filter_container}>
       {props.screenWidth < 635 && !isBurgerMenuActive && (
         <CSSTransition
           in={!isBurgerMenuActive}
@@ -75,7 +77,7 @@ const Filter = (props) => {
           })}
         </div>
       )}
-    </>
+    </div>
   );
 };
 

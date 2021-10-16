@@ -15,7 +15,7 @@ function Preloader({ setIsLoaderActive, isLoaderActive, isTextActive, setIsTextA
     setTimeout(() => {
       setIsLoaderActive(false);
       setIsTextActive(false);
-    }, 100);
+    }, 3000);
   }, [setIsLoaderActive, setIsTextActive]);
 
   return (

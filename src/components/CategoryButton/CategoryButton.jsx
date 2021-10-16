@@ -2,7 +2,11 @@ import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
 // Redux
-import { GET_SUBCATEGORY_FROM_BUTTON, DELETE_CATEGORY_FROM_BUTTON } from '../../redux/actions/filter';
+import {
+  GET_SUBCATEGORY_FROM_BUTTON,
+  DELETE_CATEGORY_FROM_BUTTON,
+  SHOW_CATEGORY_CARDS
+} from '../../redux/actions/filter';
 
 import { useDispatch } from 'react-redux';
 // Redux
@@ -32,6 +36,7 @@ function CategoryButton({ ruName, enName, path, isBurgerMenuActive, setIsBurgerM
       dispatch({ type: GET_SUBCATEGORY_FROM_BUTTON, subCategory: subCategories });
       return;
     }
+    dispatch({ type: SHOW_CATEGORY_CARDS, path: path });
     dispatch({ type: DELETE_CATEGORY_FROM_BUTTON });
     setIsBurgerMenuActive(false);
   };
@@ -53,7 +58,7 @@ function CategoryButton({ ruName, enName, path, isBurgerMenuActive, setIsBurgerM
               return;
             }
       }
-      to={path}
+      to={`${location.pathname}${path}`}
     >
       <p className={`${styles.name_en} ${buttonActive | buttonHover ? styles.name_en_active : ''}`}>{enName}</p>
       <p className={`${styles.name_ru} ${buttonActive | buttonHover ? styles.name_ru_active : ''}`}>{ruName}</p>

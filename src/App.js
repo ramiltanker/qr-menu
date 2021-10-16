@@ -1,6 +1,9 @@
 import React from 'react';
 import { Route, Switch, useLocation, useHistory } from 'react-router-dom';
-import { CSSTransition } from 'react-transition-group';
+
+// Redux
+import { useSelector } from 'react-redux';
+// Redux
 
 // Components
 import Pizza from './components/Pizza/Pizza';
@@ -11,7 +14,14 @@ import FirstCourses from './components/FirstCourses/FirstCourses';
 import SecondCourses from './components/SecondCourses/SecondCourses';
 import Burgers from './components/Burgers/Burgers';
 import Salads from './components/Salads/Salads';
+import WarmSalads from './components/WarmSalads/WarmSalads';
 import Deserts from './components/Deserts/Deserts';
+import ItalianPies from './components/ItalianPies/ItalianPies';
+import Focaccia from './components/Focaccia/Focaccia';
+import Bread from './components/Bread/Bread';
+import Snacks from './components/Snacks/Snacks';
+import Fries from './components/Fries/Fries';
+import Sauces from './components/Sauces/Sauces';
 
 import Preloader from './components/Preloader/Preloader';
 // Components
@@ -24,6 +34,8 @@ function App() {
 
   const location = useLocation();
   const history = useHistory();
+
+  const { isSecondCoursesShow } = useSelector((store) => store.filter);
 
   // Ширина экрана
   const [screenWidth, setScreenWidth] = React.useState(0);
@@ -59,7 +71,7 @@ function App() {
             <Route path="/first-courses" exact>
               <FirstCourses screenWidth={screenWidth} />
             </Route>
-            <Route path="/second-courses" exact>
+            <Route path="/second-courses/:dish" exact>
               <SecondCourses screenWidth={screenWidth} />
             </Route>
             <Route path="/pizza" exact>
@@ -71,8 +83,29 @@ function App() {
             <Route path="/salads" exact>
               <Salads screenWidth={screenWidth} />
             </Route>
+            <Route path="/warm-salads" exact>
+              <WarmSalads screenWidth={screenWidth} />
+            </Route>
             <Route path="/deserts" exact>
               <Deserts screenWidth={screenWidth} />
+            </Route>
+            <Route path="/italian-pies" exact>
+              <ItalianPies screenWidth={screenWidth} />
+            </Route>
+            <Route path="/focaccia" exact>
+              <Focaccia screenWidth={screenWidth} />
+            </Route>
+            <Route path="/bread" exact>
+              <Bread screenWidth={screenWidth} />
+            </Route>
+            <Route path="/snacks" exact>
+              <Snacks screenWidth={screenWidth} />
+            </Route>
+            <Route path="/fries" exact>
+              <Fries screenWidth={screenWidth} />
+            </Route>
+            <Route path="/sauces" exact>
+              <Sauces screenWidth={screenWidth} />
             </Route>
           </Switch>
           <Footer />

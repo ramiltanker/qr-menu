@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation, useHistory } from 'react-router-dom';
 
 // Styles
 import styles from './FilterButton.module.css';
@@ -8,7 +8,7 @@ import styles from './FilterButton.module.css';
 // Redux
 import { GET_CATEGORY_FROM_BUTTON } from '../../redux/actions/filter';
 
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 // Redux
 
 const FilterButton = ({
@@ -25,6 +25,8 @@ const FilterButton = ({
   const [buttonActive, setButtonActive] = React.useState();
 
   const location = useLocation();
+
+  const history = useHistory();
 
   const dispatch = useDispatch();
 
