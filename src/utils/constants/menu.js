@@ -313,6 +313,1063 @@ const menu = {
       price: 150
     }
   ],
+  pasta: [
+    {
+      name: 'Фетучини с говяжей щекой',
+      description: '',
+      image: '',
+      price: 1690
+    },
+    {
+      name: 'Орзо с креветками',
+      description: '',
+      image: '',
+      price: 1990
+    },
+    {
+      name: 'Лингвини с баклажанами',
+      description: '',
+      image: '',
+      price: 1100
+    },
+    {
+      name: 'Паста Альфредо',
+      description: 'Феттучини со сливочным соусом, нежным курином филе и шампиньонами',
+      image: '',
+      price: 1690
+    },
+    {
+      name: 'Паста Болоньез',
+      description: 'Спагетти с говяжьим рагу и томатным соусом',
+      image: '',
+      price: 1590
+    },
+    {
+      name: 'Спагетти с креветками и рукколой',
+      description: '',
+      image: '',
+      price: 1590
+    },
+    {
+      name: 'Фарфалле с семгой в сливочном соусе',
+      description: '',
+      image: '',
+      price: 1890
+    },
+    {
+      name: 'Ньоки в пикантном соусе с говядиной х/к',
+      description: '',
+      image: '',
+      price: 1390
+    },
+    {
+      name: 'Карбонара с колбасками',
+      description: 'Феттучини в сливочном соусе и говяжьими колбасками',
+      image: '',
+      price: 1390
+    }
+  ],
+  sideDishes: [
+    {
+      name: 'Овощи на гриле',
+      description: '',
+      image: '',
+      price: 750
+    },
+    {
+      name: 'Овощи на пару',
+      description: '',
+      image: '',
+      price: 690
+    },
+    {
+      name: 'Картофельное пюре',
+      description: '',
+      image: '',
+      price: 300
+    },
+    {
+      name: 'Рис отварной',
+      description: '',
+      image: '',
+      price: 300
+    },
+    {
+      name: 'Картофель Фри',
+      description: '',
+      image: '',
+      price: 450
+    },
+    {
+      name: 'Картофельные дольки',
+      description: '',
+      image: '',
+      price: 500
+    },
+    {
+      name: 'Хумус',
+      description: '',
+      image: '',
+      price: 690
+    },
+    {
+      name: 'Микс салата',
+      description: '',
+      image: '',
+      price: 590
+    },
+    {
+      name: 'Картофель по-деревенски',
+      description: '',
+      image: '',
+      price: 400
+    },
+    {
+      name: 'Шампиньоны на гриле',
+      description: '',
+      image: '',
+      price: 690
+    }
+  ],
+  coctails: [
+    {
+      name: 'Голубые Гавайи',
+      description: '',
+      image: '',
+      price: 1600
+    },
+    {
+      name: 'Дайкири',
+      description: '',
+      image: '',
+      price: 800
+    },
+    {
+      name: 'Космополитен',
+      description: '',
+      image: '',
+      price: 790
+    },
+    {
+      name: 'Кровавая Мэри',
+      description: '',
+      image: '',
+      price: 790
+    },
+    {
+      name: 'Куба Либра',
+      description: '',
+      image: '',
+      price: 1590
+    },
+    {
+      name: 'Лонг Айленд',
+      description: '',
+      image: '',
+      price: 1390
+    },
+    {
+      name: 'Май-Тай',
+      description: '',
+      image: '',
+      price: 1850
+    },
+    {
+      name: 'Маргарита',
+      description: '',
+      image: '',
+      price: 1790
+    },
+    {
+      name: 'Мохито',
+      description: '',
+      image: '',
+      price: 990
+    },
+    {
+      name: 'Отвертка',
+      description: '',
+      image: '',
+      price: 690
+    },
+    {
+      name: 'Пино Калада',
+      description: '',
+      image: '',
+      price: 1390
+    },
+    {
+      name: 'Секс на пляже',
+      description: '',
+      image: '',
+      price: 1090
+    },
+    {
+      name: 'Текила Санрайз',
+      description: '',
+      image: '',
+      price: 1090
+    },
+    {
+      name: 'Черная Кровь',
+      description: '',
+      image: '',
+      price: 1350
+    },
+    {
+      name: 'Егермонстр',
+      description: '',
+      image: '',
+      price: 850
+    }
+  ],
+  mulledWine: [
+    {
+      name: 'Глинтвейн',
+      description: '',
+      image: '',
+      price: 700
+    }
+  ],
+  homemadeWine: [
+    {
+      name: 'Белое сухое',
+      description: '',
+      image: '',
+      price: 500
+    },
+    {
+      name: 'Красное сухое',
+      description: '',
+      image: '',
+      price: 500
+    },
+    {
+      name: 'Красное полусладкое',
+      description: '',
+      image: '',
+      price: 500
+    },
+    {
+      name: 'Белое полусладкое',
+      description: '',
+      image: '',
+      price: 500
+    }
+  ],
+  sparklingWines: [
+    {
+      name: 'CHANTEL Волшебная Жемчужина, п/сладкое',
+      description: '',
+      image: '',
+      price: 5990
+    },
+    {
+      name: 'CHANTEL Волшебный Синий, п/сладкое',
+      description: '',
+      image: '',
+      price: 5990
+    },
+    {
+      name: 'CHANTEL Волшебный Поцелуй, п/сладкое',
+      description: '',
+      image: '',
+      price: 5990
+    },
+    {
+      name: 'CHANTEL Волшебный Розовый, п/сладкое',
+      description: '',
+      image: '',
+      price: 5990
+    },
+    {
+      name: 'Oreanda ASTI, сладкое',
+      description: '',
+      image: '',
+      price: 4000
+    },
+    {
+      name: 'Amarsi VELVETI, сладкое',
+      description: '',
+      image: '',
+      price: 2500
+    },
+    {
+      name: 'Amarsi MUSCATI, сладкое',
+      description: '',
+      image: '',
+      price: 2500
+    },
+    {
+      name: 'Amarsi ROSATI, сладкое',
+      description: '',
+      image: '',
+      price: 2500
+    }
+  ],
+  georgiaKartuliMarani: [
+    {
+      name: 'Алазанская Долина, белое полусладкое',
+      description: '',
+      image: '',
+      price: 3500
+    },
+    {
+      name: 'Алазанская Долина, красное полусладкое',
+      description: '',
+      image: '',
+      price: 3500
+    },
+    {
+      name: 'Киндзмараули, красное полусладкое',
+      description: '',
+      image: '',
+      price: 5500
+    },
+    {
+      name: 'Твиши, белое полусладкое',
+      description: '',
+      image: '',
+      price: 6000
+    },
+    {
+      name: 'Саперави, красное сухое',
+      description: '',
+      image: '',
+      price: 4000
+    },
+    {
+      name: 'Пиросмани, красное полусладкое',
+      description: '',
+      image: '',
+      price: 3500
+    },
+    {
+      name: 'Пиросмани, белое полусладкое',
+      description: '',
+      image: '',
+      price: 3500
+    },
+    {
+      name: 'Цинандали, белое сухое',
+      description: '',
+      image: '',
+      price: 5000
+    }
+  ],
+  fruitWines: [
+    {
+      name: 'МИКАДО клубника, красное',
+      description: '',
+      image: '',
+      price: 2990
+    },
+    {
+      name: 'МИКАДО вишня, красное',
+      description: '',
+      image: '',
+      price: 2990
+    },
+    {
+      name: 'МИКАДО черная смородина, красное',
+      description: '',
+      image: '',
+      price: 0
+    },
+    {
+      name: 'МИКАДО слива красная, красное',
+      description: '',
+      image: '',
+      price: 0
+    },
+    {
+      name: 'МИКАДО слива белая, белое',
+      description: '',
+      image: '',
+      price: 0
+    }
+  ],
+  vodka: [
+    {
+      name: 'Beluga Nobl',
+      description: '',
+      image: '',
+      price: 14000
+    },
+    {
+      name: 'Царская золотая',
+      description: '',
+      image: '',
+      price: 7000
+    },
+    {
+      name: 'Absolut Blue',
+      description: '',
+      image: '',
+      price: '700/6000'
+    },
+    {
+      name: 'Finlandia',
+      description: '',
+      image: '',
+      price: '750/6000'
+    },
+    {
+      name: 'Finlandia Granberry',
+      description: '',
+      image: '',
+      price: '750/5900'
+    },
+    {
+      name: 'Squadra Russa',
+      description: '',
+      image: '',
+      price: '650/5500'
+    },
+    {
+      name: 'Хортиця Абсолютна',
+      description: '',
+      image: '',
+      price: '650/5000'
+    },
+    {
+      name: 'Хорция Айс',
+      description: '',
+      image: '',
+      price: '650/4500'
+    },
+    {
+      name: 'SHUSTOFF N1',
+      description: '',
+      image: '',
+      price: '450/4000'
+    },
+    {
+      name: 'Morosha Sinevir',
+      description: '',
+      image: '',
+      price: '450/4000'
+    },
+    {
+      name: 'МЯГКОВ клюквенная',
+      description: '',
+      image: '',
+      price: '400/3700'
+    }
+  ],
+  whiskey: [
+    {
+      name: 'Jameson',
+      description: '',
+      image: '',
+      price: '1000/10000'
+    },
+    {
+      name: 'Jack Daniels Bourbor',
+      description: '',
+      image: '',
+      price: '1200/12000'
+    },
+    {
+      name: 'Chivas Regal',
+      description: '',
+      image: '',
+      price: '1700/16500'
+    },
+    {
+      name: 'Kinahans LL',
+      description: '',
+      image: '',
+      price: 1000
+    },
+    {
+      name: 'Clan MacGregor',
+      description: '',
+      image: '',
+      price: 500
+    },
+    {
+      name: 'The Claymore',
+      description: '',
+      image: '',
+      price: 600
+    },
+    {
+      name: 'McLain blended scotch whiski',
+      description: '',
+      image: '',
+      price: 500
+    },
+    {
+      name: 'Maccalister',
+      description: '',
+      image: '',
+      price: '450/4500'
+    }
+  ],
+  rum: [
+    {
+      name: 'Bacardi Black',
+      description: '',
+      image: '',
+      price: 1000
+    },
+    {
+      name: 'Bacardi Blanca',
+      description: '',
+      image: '',
+      price: 800
+    },
+    {
+      name: 'Bacardi Gold',
+      description: '',
+      image: '',
+      price: 850
+    },
+    {
+      name: 'Malibu',
+      description: '',
+      image: '',
+      price: 1100
+    }
+  ],
+  martini: [
+    {
+      name: 'Bianco',
+      description: '',
+      image: '',
+      price: 990
+    },
+    {
+      name: 'Extra Dry',
+      description: '',
+      image: '',
+      price: 990
+    },
+    {
+      name: 'Rosso',
+      description: '',
+      image: '',
+      price: 990
+    }
+  ],
+  tequilla: [
+    {
+      name: 'Olmega Blanco',
+      description: '',
+      image: '',
+      price: 1000
+    },
+    {
+      name: 'Olmega Gold',
+      description: '',
+      image: '',
+      price: 1100
+    }
+  ],
+  other: [
+    {
+      name: 'ШАМПАНСКОЕ СОВЕТСКОЕ, 750 мл',
+      description: '',
+      image: '',
+      price: 1858
+    },
+    {
+      name: 'КОНЬЯК КАЗАХСТАН, 50 мл',
+      description: '',
+      image: '',
+      price: 300
+    },
+    {
+      name: 'ДЖИН BEEFFEATER, 50 мл',
+      description: '',
+      image: '',
+      price: 700
+    },
+    {
+      name: 'АБСЕНТ, 50 мл',
+      description: '',
+      image: '',
+      price: 1400
+    }
+  ],
+  nonAlcoholicCoctails: [
+    {
+      name: 'Пина Колада',
+      description: 'сок, молоко, сироп',
+      image: '',
+      price: 800
+    },
+    {
+      name: 'Вкусное облако',
+      description: 'мороженое, сироп, банан, молоко',
+      image: '',
+      price: 800
+    },
+    {
+      name: 'Манговое безумие',
+      description: 'сок, молоко, сироп',
+      image: '',
+      price: 700
+    },
+    {
+      name: 'Мохито клубничный',
+      description: 'мята, лайм, лимон, сироп клубничный, газированная вода',
+      image: '',
+      price: 800
+    },
+    {
+      name: 'Мохито классический',
+      description: 'мята, лайм, лимон, сироп, газированная вода',
+      image: '',
+      price: 700
+    },
+    {
+      name: 'Вишнёвый поцелуй',
+      description: 'сок, сироп, вишня',
+      image: '',
+      price: 400
+    }
+  ],
+  smoothie: [
+    {
+      name: 'Банан и киви',
+      description: 'банан, киви, мороженое, молоко',
+      image: '',
+      price: 850
+    },
+    {
+      name: 'Розовый фламинго',
+      description: 'банан, клубника, мороженое, молоко',
+      image: '',
+      price: 850
+    },
+    {
+      name: 'Яблоко и апельсин',
+      description: 'апельсин, яблоко, мороженое, молоко',
+      image: '',
+      price: 850
+    },
+    {
+      name: 'Апельсин и банан',
+      description: 'апельсин, банан, мед, мороженое, молоко',
+      image: '',
+      price: 850
+    },
+    {
+      name: 'Банан и малина',
+      description: 'банан, малина, мед, мороженое, молоко',
+      image: '',
+      price: 850
+    }
+  ],
+  homemadeDrinks: [
+    {
+      name: 'Фруктовый компот',
+      description: '',
+      image: '',
+      price: 600
+    },
+    {
+      name: 'Ягодный морс',
+      description: '',
+      image: '',
+      price: 600
+    }
+  ],
+  milkshakes: [
+    {
+      name: 'Сливочный коктейль',
+      description: '',
+      image: '',
+      price: 600
+    },
+    {
+      name: 'Шокоадный коктейль',
+      description: '',
+      image: '',
+      price: 600
+    },
+    {
+      name: 'Клубничный коктейль',
+      description: '',
+      image: '',
+      price: 600
+    }
+  ],
+  freshlySqueezedJuices: [
+    {
+      name: 'Апельсин',
+      description: '',
+      image: '',
+      price: 1000
+    },
+    {
+      name: 'Яблоко',
+      description: '',
+      image: '',
+      price: 1000
+    },
+    {
+      name: 'Апельсин, яблоко',
+      description: '',
+      image: '',
+      price: 1000
+    },
+    {
+      name: 'Яблоко, морковь',
+      description: '',
+      image: '',
+      price: 1000
+    }
+  ],
+  brandedLemonades: [
+    {
+      name: 'Классический',
+      description: 'тархун, дюшес, арбуз, дыня',
+      image: '',
+      price: 890
+    },
+    {
+      name: 'Манго-маракуйя',
+      description: '',
+      image: '',
+      price: 890
+    },
+    {
+      name: 'Цитрус',
+      description: '',
+      image: '',
+      price: 890
+    },
+    {
+      name: 'Киви-банан',
+      description: '',
+      image: '',
+      price: 890
+    },
+    {
+      name: 'Барбарис-лимон',
+      description: '',
+      image: '',
+      price: 890
+    },
+    {
+      name: 'Тропический',
+      description: '',
+      image: '',
+      price: 890
+    },
+    {
+      name: 'Кленовый',
+      description: '',
+      image: '',
+      price: 890
+    },
+    {
+      name: 'Ягодный',
+      description: '',
+      image: '',
+      price: 890
+    },
+    {
+      name: 'Ананас-руккола',
+      description: '',
+      image: '',
+      price: 890
+    },
+    {
+      name: 'Огуречный',
+      description: '',
+      image: '',
+      price: 890
+    },
+    {
+      name: 'Лайм',
+      description: '',
+      image: '',
+      price: 890
+    },
+    {
+      name: 'Black star',
+      description: '',
+      image: '',
+      price: 890
+    }
+  ],
+  alcoholDreeDrinks: [
+    {
+      name: 'Pepsi, Mirinda, 7up (0,5 л/1 л)',
+      description: '',
+      image: '',
+      price: '280/500'
+    },
+    {
+      name: 'Дада-дей напиток (0,5)',
+      description: '',
+      image: '',
+      price: 280
+    },
+    {
+      name: 'Сок ДА-ДА (0,2 л/1 л)',
+      description: '',
+      image: '',
+      price: '220/600'
+    },
+    {
+      name: 'Липтон чай (0,5 л/1 л)',
+      description: '',
+      image: '',
+      price: '250/400'
+    },
+    {
+      name: 'Вода Asu (0,5 л/1 л)',
+      description: '',
+      image: '',
+      price: '200/250'
+    },
+    {
+      name: 'Диззи энерджи',
+      description: '',
+      image: '',
+      price: 450
+    }
+  ],
+  draftBeer: [
+    {
+      name: 'Пиво РАЗЛИВНОЕ ПРАГА 330/500 мл',
+      description: '',
+      image: '',
+      price: '250/350'
+    }
+  ],
+  bottledBeer: [
+    {
+      name: 'Amsterdam светлое',
+      description: '',
+      image: '',
+      price: 450
+    },
+    {
+      name: 'Старый Мельник светлое',
+      description: '',
+      image: '',
+      price: 500
+    },
+    {
+      name: 'Велкопоповицкий Козел',
+      description: '',
+      image: '',
+      price: 400
+    },
+    {
+      name: 'Bavaria безалкогольное',
+      description: '',
+      image: '',
+      price: 550
+    },
+    {
+      name: 'Bavaria светлое',
+      description: '',
+      image: '',
+      price: 450
+    },
+    {
+      name: 'Миллер светлое',
+      description: '',
+      image: '',
+      price: '500/600'
+    }
+  ],
+  beerSnacks: [
+    {
+      name: 'Гарлики',
+      description: 'из бородинского хлеба с соусом Тартар',
+      image: '',
+      price: 690
+    },
+    {
+      name: 'Пивная корзина',
+      description: 'бастурма, домашние чипсы, арахис, солёная соломка, сыр, чечил',
+      image: '',
+      price: 1890
+    },
+    {
+      name: 'Креветки пивные',
+      description: '',
+      image: '',
+      price: 2090
+    },
+    {
+      name: 'Сыр Чечил',
+      description: '',
+      image: '',
+      price: 490
+    },
+    {
+      name: 'Домашние картофельные чипсы',
+      description: '',
+      image: '',
+      price: 590
+    }
+  ],
+  tea: [
+    {
+      name: 'Чёрный чай 200мл/ 800 мл',
+      description: '',
+      image: '',
+      price: '200/500'
+    },
+    {
+      name: 'Чёрный чай с молоком 200мл/ 800 мл',
+      description: '',
+      image: '',
+      price: '200/600'
+    },
+    {
+      name: 'Чай с лимоном 200мл/ 800 мл',
+      description: '',
+      image: '',
+      price: '200/600'
+    },
+    {
+      name: 'Чёрный чай листовой 800 мл',
+      description: '',
+      image: '',
+      price: 700
+    },
+    {
+      name: 'Зелёный листовой 800 мл',
+      description: '',
+      image: '',
+      price: 600
+    },
+    {
+      name: 'Ташкентский чай 800 мл',
+      description: '',
+      image: '',
+      price: 800
+    },
+    {
+      name: 'Облепиховый 800 мл',
+      description: '',
+      image: '',
+      price: 800
+    },
+    {
+      name: 'Золотая груша 800 мл',
+      description: '',
+      image: '',
+      price: 800
+    },
+    {
+      name: 'Имбирный 800 мл',
+      description: '',
+      image: '',
+      price: 800
+    }
+  ],
+  coffee: [
+    {
+      name: 'Латте классический',
+      description: '',
+      image: '',
+      price: 500
+    },
+    {
+      name: 'Латте карамель',
+      description: '',
+      image: '',
+      price: 600
+    },
+    {
+      name: 'Латте шоколад',
+      description: '',
+      image: '',
+      price: 600
+    },
+    {
+      name: 'Латте тирамису',
+      description: '',
+      image: '',
+      price: 600
+    },
+    {
+      name: 'Латте с халвой',
+      description: '',
+      image: '',
+      price: 600
+    },
+    {
+      name: 'Латте лесной орех',
+      description: '',
+      image: '',
+      price: 600
+    },
+    {
+      name: 'Капучино',
+      description: '',
+      image: '',
+      price: 500
+    },
+    {
+      name: 'Американо с молоком',
+      description: '',
+      image: '',
+      price: 400
+    },
+    {
+      name: 'Американо без молока',
+      description: '',
+      image: '',
+      price: 300
+    },
+    {
+      name: 'Эспрессо',
+      description: '',
+      image: '',
+      price: 400
+    },
+    {
+      name: 'Горячий шоколад',
+      description: '',
+      image: '',
+      price: 600
+    },
+    {
+      name: 'Айс кофе',
+      description: '',
+      image: '',
+      price: 500
+    }
+  ],
+  forTea: [
+    {
+      name: 'Шоколад КАЗАХСТАН',
+      description: '',
+      image: '',
+      price: 600
+    },
+    {
+      name: 'Лимон',
+      description: '',
+      image: '',
+      price: 250
+    },
+    {
+      name: 'Сливки',
+      description: '',
+      image: '',
+      price: 200
+    },
+    {
+      name: 'Мед',
+      description: '',
+      image: '',
+      price: 300
+    }
+  ],
+
   firstCourses: [
     {
       name: 'Грибной крем-суп',
@@ -605,7 +1662,7 @@ const menu = {
       price: 2500
     }
   ],
-  deserts: [
+  desserts: [
     {
       name: 'Чизкейк карамельный',
       image: 'caramelCheesecake',

@@ -1,11 +1,13 @@
 .filter_container {
+  position: relative;
+  z-index: 10;
   height: auto;
   width: 100%;
 }
 
 .container {
   position: fixed;
-  z-index: 3;
+  z-index: 10;
   top: 0;
   right: 0;
   max-width: 100%;

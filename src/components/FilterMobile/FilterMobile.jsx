@@ -1,4 +1,5 @@
 import React from 'react';
+import { useHistory } from 'react-router';
 import { CSSTransition } from 'react-transition-group';
 
 // Redux
@@ -26,7 +27,7 @@ import closeIcon from '../../assets/images/icons/close.svg';
 import filterCards from '../../utils/constants/filterCards';
 // Constants
 
-function FilterMobile({ handleSwitchBurgerMenu, screenWidth, isBurgerMenuActive, setIsBurgerMenuActive, filterRef }) {
+function FilterMobile({ screenWidth, isBurgerMenuActive, setIsBurgerMenuActive, filterRef, handleCloseBurgerMenu }) {
   const closeIconRef = React.useRef();
   const categoryRef = React.useRef();
   const subCategoryRef = React.useRef();
@@ -36,9 +37,13 @@ function FilterMobile({ handleSwitchBurgerMenu, screenWidth, isBurgerMenuActive,
   const { isCategoryShow, isSubCategoryShow } = useSelector((store) => store.filter);
 
   const closeBurgerMenu = () => {
-    if (isSubCategoryShow) dispatch({ type: DELETE_SUBCATEGORY_FROM_BUTTON });
-    if (isCategoryShow) dispatch({ type: DELETE_CATEGORY_FROM_BUTTON });
-    else handleSwitchBurgerMenu();
+    if (isSubCategoryShow) {
+      dispatch({ type: DELETE_SUBCATEGORY_FROM_BUTTON });
+    }
+    if (isCategoryShow) {
+      dispatch({ type: DELETE_CATEGORY_FROM_BUTTON });
+    }
+    handleCloseBurgerMenu();
   };
 
   return (
@@ -59,7 +64,7 @@ function FilterMobile({ handleSwitchBurgerMenu, screenWidth, isBurgerMenuActive,
               src={closeIcon}
               alt="close-icon"
               className={styles.close_icon}
-              onClick={handleSwitchBurgerMenu}
+              onClick={closeBurgerMenu}
               ref={closeIconRef}
             />
           </CSSTransition>
@@ -73,7 +78,6 @@ function FilterMobile({ handleSwitchBurgerMenu, screenWidth, isBurgerMenuActive,
                 path={item.path}
                 screenWidth={screenWidth}
                 isBurgerMenuActive={isBurgerMenuActive}
-                handleSwitchBurgerMenu={handleSwitchBurgerMenu}
                 setIsBurgerMenuActive={setIsBurgerMenuActive}
               />
             );

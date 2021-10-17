@@ -1,5 +1,5 @@
 import React from 'react';
-import { TransitionGroup, CSSTransition } from 'react-transition-group';
+import { CSSTransition } from 'react-transition-group';
 
 // Styles
 import styles from './Filter.module.css';
@@ -24,8 +24,12 @@ const Filter = (props) => {
 
   const filterRef = React.useRef();
 
-  const handleSwitchBurgerMenu = () => {
-    setIsBurgerMenuActive(!isBurgerMenuActive);
+  const handleOpenBurgerMenu = () => {
+    setIsBurgerMenuActive(true);
+  };
+
+  const handleCloseBurgerMenu = () => {
+    setIsBurgerMenuActive(false);
   };
 
   React.useEffect(() => {
@@ -46,7 +50,7 @@ const Filter = (props) => {
           classNames="burger-icon"
           appear={true}
         >
-          <img src={burgerIcon} alt="burger" className={styles.burger_icon} onClick={handleSwitchBurgerMenu} />
+          <img src={burgerIcon} alt="burger" className={styles.burger_icon} onClick={handleOpenBurgerMenu} />
         </CSSTransition>
       )}
       {props.screenWidth < 635 ? (
@@ -62,9 +66,9 @@ const Filter = (props) => {
           <FilterMobile
             key={'filter'}
             filterRef={filterRef}
-            handleSwitchBurgerMenu={handleSwitchBurgerMenu}
             screenWidth={props.screenWidth}
             isBurgerMenuActive={isBurgerMenuActive}
+            handleCloseBurgerMenu={handleCloseBurgerMenu}
             setIsBurgerMenuActive={setIsBurgerMenuActive}
           />
         </CSSTransition>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { useHistory } from 'react-router';
 
 import { CSSTransition } from 'react-transition-group';
 
@@ -24,11 +25,13 @@ import goBackIcon from '../../assets/images/icons/go-back.svg';
 function SubCategory({ isBurgerMenuActive, setIsBurgerMenuActive, subCategoryRef }) {
   const { subCategory, isSubCategoryShow } = useSelector((store) => store.filter);
 
+  const history = useHistory();
   const dispatch = useDispatch();
 
   const BackIconRef = React.useRef();
 
   const handleGoBack = () => {
+    history.goBack();
     dispatch({ type: DELETE_SUBCATEGORY_FROM_BUTTON });
   };
 

@@ -62,11 +62,6 @@ const filterCards = [
     path: '/warm-salads'
   },
   {
-    enName: 'Desserts',
-    ruName: 'Дессерты',
-    path: '/deserts'
-  },
-  {
     enName: 'Italian pies',
     ruName: 'Итальянские пироги',
     path: '/italian-pies'
@@ -154,6 +149,11 @@ const filterCards = [
         path: '/vodka'
       },
       {
+        ruName: 'Виски',
+        enName: 'Whiskey',
+        path: '/whiskey'
+      },
+      {
         ruName: 'Ром',
         enName: 'Rum',
         path: '/rum'
@@ -167,6 +167,21 @@ const filterCards = [
         ruName: 'Текила',
         enName: 'Tequila',
         path: '/tequila'
+      },
+      {
+        ruName: 'Разливное',
+        enName: 'Draft beer',
+        path: '/draft-beer'
+      },
+      {
+        ruName: 'Бутылочное',
+        enName: 'Bottled beer',
+        path: '/bottled-beer'
+      },
+      {
+        ruName: 'Другое',
+        enName: 'Other',
+        path: '/other'
       }
     ]
   },
@@ -196,8 +211,8 @@ const filterCards = [
         path: '/milkshakes'
       },
       {
-        ruName: 'соки свежевыжатые',
-        enName: 'freshly squeezed juices',
+        ruName: 'Cоки свежевыжатые',
+        enName: 'Freshly squeezed juices',
         path: '/freshly-squeezed-juices'
       },
       {
@@ -213,26 +228,9 @@ const filterCards = [
     ]
   },
   {
-    enName: 'Beer',
-    ruName: 'Пиво',
-    path: '/beer',
-    categories: [
-      {
-        ruName: 'Разливное',
-        enName: 'Draft beer',
-        path: '/draft-beer'
-      },
-      {
-        ruName: 'Бутылочное',
-        enName: 'Bottled beer',
-        path: '/bottled-beer'
-      }
-    ]
-  },
-  {
     enName: 'Beer snacks',
     ruName: 'К пиву',
-    path: '/to-beer'
+    path: '/beer-snacks'
   },
   {
     enName: 'Tea',

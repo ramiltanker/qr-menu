@@ -15,11 +15,9 @@ const FilterButton = ({
   ruName,
   enName,
   path,
-  screenWidth,
   isBurgerMenuActive,
   setIsBurgerMenuActive,
   categories,
-  handleSwitchBurgerMenu
 }) => {
   const [buttonHover, setButtonHover] = React.useState();
   const [buttonActive, setButtonActive] = React.useState();

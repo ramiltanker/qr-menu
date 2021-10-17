@@ -20,7 +20,6 @@ function CategoryButton({ ruName, enName, path, isBurgerMenuActive, setIsBurgerM
   const [buttonActive, setButtonActive] = React.useState();
 
   const location = useLocation();
-
   const dispatch = useDispatch();
 
   const handleButtonHover = () => {
@@ -33,12 +32,14 @@ function CategoryButton({ ruName, enName, path, isBurgerMenuActive, setIsBurgerM
 
   const handleClickButton = () => {
     if (subCategories) {
+      console.log(subCategories);
       dispatch({ type: GET_SUBCATEGORY_FROM_BUTTON, subCategory: subCategories });
       return;
+    } else {
+      dispatch({ type: SHOW_CATEGORY_CARDS, path: path });
+      dispatch({ type: DELETE_CATEGORY_FROM_BUTTON });
+      setIsBurgerMenuActive(false);
     }
-    dispatch({ type: SHOW_CATEGORY_CARDS, path: path });
-    dispatch({ type: DELETE_CATEGORY_FROM_BUTTON });
-    setIsBurgerMenuActive(false);
   };
 
   React.useEffect(() => {

@@ -13,63 +13,63 @@ import menu from '../../utils/constants/menu';
 // Constants
 
 // Styles
-import styles from './Deserts.module.css';
+import styles from './BeerSnacks.module.css';
 // Styles
 
-function Deserts(props) {
+function BeerSnacks(props) {
   const [renderCards, setRenderCards] = React.useState([]);
   const [isShowMoreButton, setShowMoreButton] = React.useState(true);
 
-  const deserts = menu.deserts;
+  const beerSnacks = menu.beerSnacks;
 
   React.useEffect(() => {
     if (props.screenWidth >= 1280) {
-      setRenderCards(deserts.slice(0, 12));
+      setRenderCards(beerSnacks.slice(0, 12));
     }
     if (props.screenWidth <= 1090) {
-      setRenderCards(deserts.slice(0, 6));
+      setRenderCards(beerSnacks.slice(0, 6));
     }
     if (props.screenWidth <= 425) {
-      setRenderCards(deserts.slice(0, 4));
+      setRenderCards(beerSnacks.slice(0, 4));
     }
-    if (renderCards.length === deserts.length) {
+    if (renderCards.length === beerSnacks.length) {
       setShowMoreButton(false);
     } else {
       setShowMoreButton(true);
     }
-  }, [deserts, props.screenWidth]);
+  }, [beerSnacks, props.screenWidth]);
 
   React.useEffect(() => {
-    if (deserts.length === 0) {
+    if (beerSnacks.length === 0) {
       setShowMoreButton(false);
     }
     if (props.screenWidth >= 1280) {
-      deserts.length > 12 ? setShowMoreButton(true) : setShowMoreButton(false);
+      beerSnacks.length > 12 ? setShowMoreButton(true) : setShowMoreButton(false);
     }
     if (props.screenWidth <= 1090) {
-      deserts.length > 6 ? setShowMoreButton(true) : setShowMoreButton(false);
+      beerSnacks.length > 6 ? setShowMoreButton(true) : setShowMoreButton(false);
     }
     if (props.screenWidth <= 425) {
-      deserts.length > 5 ? setShowMoreButton(true) : setShowMoreButton(false);
+      beerSnacks.length > 5 ? setShowMoreButton(true) : setShowMoreButton(false);
     }
-  }, [props.screenWidth, deserts.length]);
+  }, [props.screenWidth, beerSnacks.length]);
 
   function handleShowFilms() {
     if (props.screenWidth >= 1280) {
-      setRenderCards(deserts.slice(0, renderCards.length + 3));
-      if (renderCards.length >= deserts.length - 3) {
+      setRenderCards(beerSnacks.slice(0, renderCards.length + 3));
+      if (renderCards.length >= beerSnacks.length - 3) {
         setShowMoreButton(false);
       }
     }
     if (props.screenWidth <= 1090) {
-      setRenderCards(deserts.slice(0, renderCards.length + 2));
-      if (renderCards.length >= deserts.length - 2) {
+      setRenderCards(beerSnacks.slice(0, renderCards.length + 2));
+      if (renderCards.length >= beerSnacks.length - 2) {
         setShowMoreButton(false);
       }
     }
     if (props.screenWidth <= 425) {
-      setRenderCards(deserts.slice(0, renderCards.length + 2));
-      if (renderCards.length >= deserts.length - 2) {
+      setRenderCards(beerSnacks.slice(0, renderCards.length + 2));
+      if (renderCards.length >= beerSnacks.length - 2) {
         setShowMoreButton(false);
       }
     }
@@ -97,4 +97,4 @@ function Deserts(props) {
   );
 }
 
-export default Deserts;
+export default BeerSnacks;

@@ -1,0 +1,17 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.text {
+  font-size: 25px;
+  margin-top: 40px;
+}
+
+.image {
+  margin-top: 20px;
+  width: 200px;
+  height: 200px;
+}
