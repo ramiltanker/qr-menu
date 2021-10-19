@@ -42,7 +42,7 @@ function App() {
   const [isLoaderActive, setIsLoaderActive] = React.useState(true);
   const [isTextActive, setIsTextActive] = React.useState(true);
 
-  const history = useHistory( );
+  const history = useHistory();
   const location = useLocation();
 
   // Ширина экрана
@@ -80,74 +80,78 @@ function App() {
           <Filter screenWidth={screenWidth} />
           <Switch location={location}>
             <Route path="/" exact>
-              <Main />
+              <Main screenWidth={screenWidth} />
             </Route>
-            <Route path="/first-courses" exact>
-              <FirstCourses screenWidth={screenWidth} />
-            </Route>
-            <Route path="/second-courses/:dish" exact>
-              <SecondCourses screenWidth={screenWidth} />
-            </Route>
-            <Route path="/pizza" exact>
-              <Pizza screenWidth={screenWidth} />
-            </Route>
-            <Route path="/burgers" exact>
-              <Burgers screenWidth={screenWidth} />
-            </Route>
-            <Route path="/salads" exact>
-              <Salads screenWidth={screenWidth} />
-            </Route>
-            <Route path="/warm-salads" exact>
-              <WarmSalads screenWidth={screenWidth} />
-            </Route>
-            <Route path="/desserts" exact>
-              <Deserts screenWidth={screenWidth} />
-            </Route>
-            <Route path="/italian-pies" exact>
-              <ItalianPies screenWidth={screenWidth} />
-            </Route>
-            <Route path="/focaccia" exact>
-              <Focaccia screenWidth={screenWidth} />
-            </Route>
-            <Route path="/bread" exact>
-              <Bread screenWidth={screenWidth} />
-            </Route>
-            <Route path="/snacks" exact>
-              <Snacks screenWidth={screenWidth} />
-            </Route>
-            <Route path="/fries" exact>
-              <Fries screenWidth={screenWidth} />
-            </Route>
-            <Route path="/sauces" exact>
-              <Sauces screenWidth={screenWidth} />
-            </Route>
-            <Route path="/pasta" exact>
-              <Pasta screenWidth={screenWidth} />
-            </Route>
-            <Route path="/side-dishes" exact>
-              <SideDishes screenWidth={screenWidth} />
-            </Route>
-            <Route path="/bar-menu/:barDrink" exact>
-              <BarMenu screenWidth={screenWidth} />
-            </Route>
-            <Route path="/bar-menu/wines/:wineType" screenWidth={screenWidth} exact>
-              <Wines screenWidth={screenWidth} />
-            </Route>
-            <Route path="/soft-drinks/:softDrink" exact>
-              <SoftDrinks screenWidth={screenWidth} />
-            </Route>
-            <Route path="/beer-snacks" exact>
-              <BeerSnacks screenWidth={screenWidth} />
-            </Route>
-            <Route path="/tea" exact>
-              <Tea screenWidth={screenWidth} />
-            </Route>
-            <Route path="/coffee" exact>
-              <Coffee screenWidth={screenWidth} />
-            </Route>
-            <Route path="/for-tea" exact>
-              <ForTea screenWidth={screenWidth} />
-            </Route>
+            {screenWidth < 768 && (
+              <>
+                <Route path="/first-courses" exact>
+                  <FirstCourses screenWidth={screenWidth} />
+                </Route>
+                <Route path="/second-courses/:dish" exact>
+                  <SecondCourses screenWidth={screenWidth} />
+                </Route>
+                <Route path="/pizza" exact>
+                  <Pizza screenWidth={screenWidth} />
+                </Route>
+                <Route path="/burgers" exact>
+                  <Burgers screenWidth={screenWidth} />
+                </Route>
+                <Route path="/salads" exact>
+                  <Salads screenWidth={screenWidth} />
+                </Route>
+                <Route path="/warm-salads" exact>
+                  <WarmSalads screenWidth={screenWidth} />
+                </Route>
+                <Route path="/desserts" exact>
+                  <Deserts screenWidth={screenWidth} />
+                </Route>
+                <Route path="/italian-pies" exact>
+                  <ItalianPies screenWidth={screenWidth} />
+                </Route>
+                <Route path="/focaccia" exact>
+                  <Focaccia screenWidth={screenWidth} />
+                </Route>
+                <Route path="/bread" exact>
+                  <Bread screenWidth={screenWidth} />
+                </Route>
+                <Route path="/snacks" exact>
+                  <Snacks screenWidth={screenWidth} />
+                </Route>
+                <Route path="/fries" exact>
+                  <Fries screenWidth={screenWidth} />
+                </Route>
+                <Route path="/sauces" exact>
+                  <Sauces screenWidth={screenWidth} />
+                </Route>
+                <Route path="/pasta" exact>
+                  <Pasta screenWidth={screenWidth} />
+                </Route>
+                <Route path="/side-dishes" exact>
+                  <SideDishes screenWidth={screenWidth} />
+                </Route>
+                <Route path="/bar-menu/:barDrink" exact>
+                  <BarMenu screenWidth={screenWidth} />
+                </Route>
+                <Route path="/bar-menu/wines/:wineType" screenWidth={screenWidth} exact>
+                  <Wines screenWidth={screenWidth} />
+                </Route>
+                <Route path="/soft-drinks/:softDrink" exact>
+                  <SoftDrinks screenWidth={screenWidth} />
+                </Route>
+                <Route path="/beer-snacks" exact>
+                  <BeerSnacks screenWidth={screenWidth} />
+                </Route>
+                <Route path="/tea" exact>
+                  <Tea screenWidth={screenWidth} />
+                </Route>
+                <Route path="/coffee" exact>
+                  <Coffee screenWidth={screenWidth} />
+                </Route>
+                <Route path="/for-tea" exact>
+                  <ForTea screenWidth={screenWidth} />
+                </Route>
+              </>
+            )}
           </Switch>
           <Footer />
         </>

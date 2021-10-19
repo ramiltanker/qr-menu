@@ -32,7 +32,6 @@ function CategoryButton({ ruName, enName, path, isBurgerMenuActive, setIsBurgerM
 
   const handleClickButton = () => {
     if (subCategories) {
-      console.log(subCategories);
       dispatch({ type: GET_SUBCATEGORY_FROM_BUTTON, subCategory: subCategories });
       return;
     } else {

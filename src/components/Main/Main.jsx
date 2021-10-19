@@ -6,11 +6,14 @@ import styles from './Main.module.css';
 
 import qrMenu from '../../assets/images/testImages/qr-menu.jfif';
 
-function Main() {
+function Main({ screenWidth }) {
   return (
     <section className={styles.main}>
       <p className={styles.text}>QR-MENU</p>
       <img src={qrMenu} alt="qr-menu" className={styles.image} />
+      {screenWidth > 768 && (
+        <p className={styles.subtext}>Предложение предназначено для планшетов и мобильных устройств</p>
+      )}
     </section>
   );
 }

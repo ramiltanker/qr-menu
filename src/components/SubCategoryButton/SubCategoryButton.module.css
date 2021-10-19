@@ -86,22 +86,7 @@
   transition: 0.2s linear color;
 }
 
-@media all and (max-width: 768px) {
-  .button {
-    margin-right: 30px;
-  }
-  .button:first-of-type {
-    margin-left: 0px;
-  }
-}
-
-@media all and (max-width: 690px) {
-  .button {
-    margin-right: 20px;
-  }
-}
-
-@media all and (max-width: 635px) {
+@media all and (max-width: 769px) {
   .button {
     display: -webkit-box;
     display: -ms-flexbox;

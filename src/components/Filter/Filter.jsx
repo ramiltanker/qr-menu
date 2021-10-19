@@ -39,9 +39,10 @@ const Filter = (props) => {
       document.body.style.overflow = 'scroll';
     }
   });
+
   return (
     <div className={styles.filter_container}>
-      {props.screenWidth < 635 && !isBurgerMenuActive && (
+      {props.screenWidth < 769 && !isBurgerMenuActive && (
         <CSSTransition
           in={!isBurgerMenuActive}
           timeout={800}
@@ -53,7 +54,7 @@ const Filter = (props) => {
           <img src={burgerIcon} alt="burger" className={styles.burger_icon} onClick={handleOpenBurgerMenu} />
         </CSSTransition>
       )}
-      {props.screenWidth < 635 ? (
+      {props.screenWidth < 769 && (
         <CSSTransition
           in={isBurgerMenuActive}
           timeout={300}
@@ -72,14 +73,6 @@ const Filter = (props) => {
             setIsBurgerMenuActive={setIsBurgerMenuActive}
           />
         </CSSTransition>
-      ) : (
-        <div className={styles.filter}>
-          {filterCards.map(({ enName, ruName, path }, index) => {
-            return (
-              <FilterButton enName={enName} ruName={ruName} key={index} path={path} screenWidth={props.screenWidth} />
-            );
-          })}
-        </div>
       )}
     </div>
   );
