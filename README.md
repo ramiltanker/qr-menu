@@ -1,1 +1,1 @@
-You can see that web application using link[GitHub Pages](https://qr-menu-restaraunt.vercel.app/).
+You can see that web application using [Link](https://qr-menu-restaraunt.vercel.app/).

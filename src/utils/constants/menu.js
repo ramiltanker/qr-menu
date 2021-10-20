@@ -1,3 +1,35 @@
+// Images
+import burger from '../../assets/images/testImages/burger.jpg';
+import antrekot from '../../assets/images/testImages/антрекот.jpg';
+import beftroganov from '../../assets/images/testImages/Бефтроганов.JPG';
+import forelMixSalad from '../../assets/images/testImages/жареная форель с микс салатом.jpg';
+import chikenShnicel from '../../assets/images/testImages/куриный шницель в кунжуте.JPG';
+import ossobuko from '../../assets/images/testImages/оссобуко.JPG';
+import ribai from '../../assets/images/testImages/рибай.jpg';
+import skumbriaOrange from '../../assets/images/testImages/скумбрия в апельсиново-свекольной сальсе.JPG';
+import indeikaSteak from '../../assets/images/testImages/стейк из индейки.JPG';
+import lososNorvegia from '../../assets/images/testImages/стейк из норвежского лосося в апельсиновой глазури.JPG';
+import sudakVeshenkami from '../../assets/images/testImages/судак с вешенками.JPG';
+import tibon from '../../assets/images/testImages/тибон.jpg';
+import beefCheek from '../../assets/images/testImages/томленая говяжья щека.JPG';
+import meatBallsSause from '../../assets/images/testImages/фрикадельки в пикантном соусе.jpg';
+import wings from '../../assets/images/testImages/крылья.jpg';
+import eggplantHumus from '../../assets/images/testImages/обугленные баклажаны с хумусом.JPG';
+import cheeseSticks from '../../assets/images/testImages/сырные палочки.jpg';
+import springRolls from '../../assets/images/testImages/хрустящие спринг роллы.jpg';
+import mocarellaBread from '../../assets/images/testImages/чесночный хлеб с сыром Моцарелла.jpg';
+import pastaBolonyes from '../../assets/images/testImages/Болоньез.JPG';
+import lingviniBaklazhan from '../../assets/images/testImages/лингвини с баклажанами.JPG';
+import nyokkiSause from '../../assets/images/testImages/ньокки в пикантном соусе.JPG';
+import orsoShrimp from '../../assets/images/testImages/орзо с креветками.JPG';
+import pastaShrimp from '../../assets/images/testImages/спагетти с креветками и рукколой.jpg';
+import fettuchiniBeef from '../../assets/images/testImages/фетучини с говяжьей щекой.JPG';
+// import  from '../../assets/images/testImages/.jpg';
+// import  from '../../assets/images/testImages/.jpg';
+// import  from '../../assets/images/testImages/.jpg';
+// import  from '../../assets/images/testImages/.jpg';
+// Images
+
 const menu = {
   pizza: [
     {
@@ -134,7 +166,7 @@ const menu = {
     {
       name: 'Болоньезе',
       description: 'фирменный пицца-соус, сыр Моцарелла, фарш говяжий, помидоры черри, сыр Пармезан',
-      image: 'Bolognese',
+      image: pastaBolonyes,
       price: 1980
     },
     {
@@ -209,13 +241,13 @@ const menu = {
     {
       name: 'Хрустящие спринт-роллы с сыром',
       description: '',
-      image: '',
+      image: springRolls,
       price: 1290
     },
     {
       name: 'Сырные палочки Моцарелла с клюквенным соусом',
       description: '',
-      image: '',
+      image: cheeseSticks,
       price: 1390
     },
     {
@@ -227,7 +259,7 @@ const menu = {
     {
       name: 'Обугленные баклажаны с хумусом',
       description: '',
-      image: '',
+      image: eggplantHumus,
       price: 1980
     },
     {
@@ -245,25 +277,25 @@ const menu = {
     {
       name: 'Чесночный хлеб с сыром Моцарелла',
       description: '',
-      image: '',
+      image: mocarellaBread,
       price: 1590
     },
     {
       name: 'Крылья Баскет L (20шт)',
       description: '',
-      image: '',
+      image: wings,
       price: 3550
     },
     {
       name: 'Крылья Баскет M (15шт)',
       description: '',
-      image: '',
+      image: wings,
       price: 2650
     },
     {
       name: 'Крылья Баскет S (5шт)',
       description: '',
-      image: '',
+      image: wings,
       price: 990
     }
   ],
@@ -317,55 +349,55 @@ const menu = {
     {
       name: 'Фетучини с говяжей щекой',
       description: '',
-      image: '',
+      image: fettuchiniBeef,
       price: 1690
     },
     {
       name: 'Орзо с креветками',
       description: '',
-      image: '',
+      image: orsoShrimp,
       price: 1990
     },
     {
       name: 'Лингвини с баклажанами',
       description: '',
-      image: '',
+      image: lingviniBaklazhan,
       price: 1100
     },
     {
       name: 'Паста Альфредо',
       description: 'Феттучини со сливочным соусом, нежным курином филе и шампиньонами',
-      image: '',
+      image: lingviniBaklazhan,
       price: 1690
     },
     {
       name: 'Паста Болоньез',
       description: 'Спагетти с говяжьим рагу и томатным соусом',
-      image: '',
+      image: nyokkiSause,
       price: 1590
     },
     {
       name: 'Спагетти с креветками и рукколой',
       description: '',
-      image: '',
+      image: pastaShrimp,
       price: 1590
     },
     {
       name: 'Фарфалле с семгой в сливочном соусе',
       description: '',
-      image: '',
+      image: orsoShrimp,
       price: 1890
     },
     {
       name: 'Ньоки в пикантном соусе с говядиной х/к',
       description: '',
-      image: '',
+      image: nyokkiSause,
       price: 1390
     },
     {
       name: 'Карбонара с колбасками',
       description: 'Феттучини в сливочном соусе и говяжьими колбасками',
-      image: '',
+      image: fettuchiniBeef,
       price: 1390
     }
   ],
@@ -1425,32 +1457,32 @@ const menu = {
     {
       name: 'Стейк РИБАЙ',
       description: 'Стейк, овощи гриль, шампиньоны, приправленные ароматные маслом и прованскими травами',
-      image: 'ribaiSteak',
+      image: ribai,
       price: 3900
     },
     {
       name: 'Стейк АНТРЕКОТ',
       description: 'Стейк, овощи гриль, шампиньоны, приправленные ароматные маслом и прованскими травами',
-      image: 'antrekotSteak',
+      image: antrekot,
       price: 3500
     },
     {
       name: 'Стейк ТИБОН',
       description: 'Стейк, овощи гриль, шампиньоны, приправленные ароматные маслом и прованскими травами',
-      image: 'tibonSteak',
+      image: tibon,
       price: 3800
     },
     {
       name: 'Стейк из индейки',
       description: 'филе индейки, овощи гриль с травами и соусом Барбекю',
-      image: 'turkeySteak',
+      image: indeikaSteak,
       price: 2500
     }
   ],
   fishDishes: [
     {
       name: 'Судак с вешенками',
-      image: 'pikePerchWithOysterMushrooms',
+      image: sudakVeshenkami,
       price: 2190
     },
     {
@@ -1460,12 +1492,12 @@ const menu = {
     },
     {
       name: 'Стейк из норвежского лосося в апельсиновой глазури',
-      image: '',
+      image: lososNorvegia,
       price: 3490
     },
     {
       name: 'Скумбрия в апельсиново-свекольной сальсе',
-      image: '',
+      image: skumbriaOrange,
       price: 1890
     }
   ],
@@ -1479,12 +1511,12 @@ const menu = {
   beefDishes: [
     {
       name: 'Оссобуко',
-      image: '',
+      image: ossobuko,
       price: 3490
     },
     {
       name: 'Томленая говяжья щека',
-      image: 'beefCheek',
+      image: beefCheek,
       price: 2690
     },
     {
@@ -1496,12 +1528,12 @@ const menu = {
     {
       name: 'Фрикадельки в икантном соусе',
       description: 'молочные говяжьи фрикадельки в пикантном соусе с пастой лингвини',
-      image: '',
+      image: meatBallsSause,
       price: 1890
     },
     {
       name: 'Бефстроганов с вялеными томатами и грибами',
-      image: '',
+      image: beftroganov,
       price: 2490
     },
     {
@@ -1518,7 +1550,7 @@ const menu = {
   chickenDishes: [
     {
       name: 'Куриный шницель в кунжуте',
-      image: '',
+      image: chikenShnicel,
       price: 1390
     },
     {
@@ -1539,33 +1571,33 @@ const menu = {
     {
       name: 'Гамбургер комбо',
       description: 'гамбургер, картофель фри, пепси 0.5л',
-      image: 'hamburgerCombo',
+      image: burger,
       price: 1490
     },
     {
       name: 'Чизбургер комбо',
       description: 'чизбургер, картофель фри, пепси 0.5л',
-      image: 'cheeseburgerCombo',
+      image: burger,
       price: 1590
     },
     {
       name: 'Двойной гамбургер',
-      image: 'doubleHamburger',
+      image: burger,
       price: 1390
     },
     {
       name: 'Двойной чизбургер',
-      image: 'cheeseburgerHamburger',
+      image: burger,
       price: 1590
     },
     {
       name: 'Гамбургер',
-      image: 'hamburger',
+      image: burger,
       price: 890
     },
     {
       name: 'Чизбургер',
-      image: 'cheeseburger',
+      image: burger,
       price: 990
     }
   ],
@@ -1622,7 +1654,7 @@ const menu = {
     {
       name: 'Микс зелени с картофелем и копченой семгой',
       description: '',
-      image: '',
+      image: forelMixSalad,
       price: 1920
     },
     {

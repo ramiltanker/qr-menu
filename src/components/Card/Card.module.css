@@ -26,8 +26,9 @@
 
 .image {
   width: 260px;
-  height: 150px;
+  height: 200px;
   margin-top: 20px;
+  object-fit: cover;
 }
 
 .description {

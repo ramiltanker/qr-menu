@@ -10,10 +10,10 @@ import BasketButton from '../BasketButton/BasketButton';
 
 import testImage from '../../assets/images/testImages/margarite.png';
 
-const Card = ({ name, text, price }) => {
+const Card = ({ name, text, price, image }) => {
   return (
     <div className={styles.card}>
-      <img src={testImage} alt="test" className={styles.image} />
+      <img src={image} alt="test" className={styles.image} />
       <div className={styles.description}>
         <h2 className={styles.name}>{name}</h2>
         <p className={styles.text}>{text}</p>

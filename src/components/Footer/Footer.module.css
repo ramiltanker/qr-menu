@@ -1,14 +1,15 @@
 .footer {
   display: flex;
+  justify-self: flex-end;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   width: 100%;
-  height: 150px;
   background: #ffffff;
   box-shadow: 0px 12px 40px rgba(0, 0, 0, 0.25);
-  margin-top: 100px;
   align-self: flex-end;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .text {
@@ -16,6 +17,22 @@
   font-size: 1.2rem;
 }
 
+.text:last-of-type {
+  margin-bottom: 0;
+}
+
 .text span {
   color: #ea473e;
+}
+
+@media all and (max-width: 769px) {
+  .footer {
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+  .footer {
+    max-height: 150px;
+  }
 }
