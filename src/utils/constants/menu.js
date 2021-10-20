@@ -1,33 +1,33 @@
 // Images
 import burger from '../../assets/images/testImages/burger.jpg';
 import antrekot from '../../assets/images/testImages/антрекот.jpg';
-import beftroganov from '../../assets/images/testImages/Бефтроганов.JPG';
+import beftroganov from '../../assets/images/testImages/Бефтроганов.jfif';
 import forelMixSalad from '../../assets/images/testImages/жареная форель с микс салатом.jpg';
-import chikenShnicel from '../../assets/images/testImages/куриный шницель в кунжуте.JPG';
+import chikenShnicel from '../../assets/images/testImages/куриный шницель в кунжуте.jfif';
 import ossobuko from '../../assets/images/testImages/оссобуко.JPG';
 import ribai from '../../assets/images/testImages/рибай.jpg';
 import skumbriaOrange from '../../assets/images/testImages/скумбрия в апельсиново-свекольной сальсе.JPG';
-import indeikaSteak from '../../assets/images/testImages/стейк из индейки.JPG';
-import lososNorvegia from '../../assets/images/testImages/стейк из норвежского лосося в апельсиновой глазури.JPG';
-import sudakVeshenkami from '../../assets/images/testImages/судак с вешенками.JPG';
+import indeikaSteak from '../../assets/images/testImages/стейк из индейки.jfif';
+import lososNorvegia from '../../assets/images/testImages/стейк из норвежского лосося в апельсиновой глазури.jfif';
+import sudakVeshenkami from '../../assets/images/testImages/судак с вешенками.jfif';
 import tibon from '../../assets/images/testImages/тибон.jpg';
-import beefCheek from '../../assets/images/testImages/томленая говяжья щека.JPG';
+import beefCheek from '../../assets/images/testImages/томленая говяжья щека.jfif';
 import meatBallsSause from '../../assets/images/testImages/фрикадельки в пикантном соусе.jpg';
 import wings from '../../assets/images/testImages/крылья.jpg';
 import eggplantHumus from '../../assets/images/testImages/обугленные баклажаны с хумусом.JPG';
 import cheeseSticks from '../../assets/images/testImages/сырные палочки.jpg';
 import springRolls from '../../assets/images/testImages/хрустящие спринг роллы.jpg';
 import mocarellaBread from '../../assets/images/testImages/чесночный хлеб с сыром Моцарелла.jpg';
-import pastaBolonyes from '../../assets/images/testImages/Болоньез.JPG';
-import lingviniBaklazhan from '../../assets/images/testImages/лингвини с баклажанами.JPG';
+import pastaBolonyes from '../../assets/images/testImages/Болоньез.jfif';
+import lingviniBaklazhan from '../../assets/images/testImages/лингвини с баклажанами.jfif';
 import nyokkiSause from '../../assets/images/testImages/ньокки в пикантном соусе.JPG';
 import orsoShrimp from '../../assets/images/testImages/орзо с креветками.JPG';
 import pastaShrimp from '../../assets/images/testImages/спагетти с креветками и рукколой.jpg';
-import fettuchiniBeef from '../../assets/images/testImages/фетучини с говяжьей щекой.JPG';
-// import  from '../../assets/images/testImages/.jpg';
-// import  from '../../assets/images/testImages/.jpg';
-// import  from '../../assets/images/testImages/.jpg';
-// import  from '../../assets/images/testImages/.jpg';
+import fettuchiniBeef from '../../assets/images/testImages/фетучини с говяжьей щекой.jfif';
+// import  from '../../assets/images/testImages/.JFIF';
+// import  from '../../assets/images/testImages/.JFIF';
+// import  from '../../assets/images/testImages/.JFIF';
+// import  from '../../assets/images/testImages/.JFIF';
 // Images
 
 const menu = {
