@@ -13,7 +13,7 @@ import testImage from '../../assets/images/testImages/margarite.png';
 const Card = ({ name, text, price, image }) => {
   return (
     <div className={styles.card}>
-      <img src={image} alt="test" className={styles.image} />
+      <img src={image} alt={name} className={styles.image} />
       <div className={styles.description}>
         <h2 className={styles.name}>{name}</h2>
         <p className={styles.text}>{text}</p>

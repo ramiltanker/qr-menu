@@ -24,10 +24,34 @@ import nyokkiSause from '../../assets/images/testImages/ньокки в пика
 import orsoShrimp from '../../assets/images/testImages/орзо с креветками.JPG';
 import pastaShrimp from '../../assets/images/testImages/спагетти с креветками и рукколой.jpg';
 import fettuchiniBeef from '../../assets/images/testImages/фетучини с говяжьей щекой.jfif';
-// import  from '../../assets/images/testImages/.JFIF';
-// import  from '../../assets/images/testImages/.JFIF';
-// import  from '../../assets/images/testImages/.JFIF';
-// import  from '../../assets/images/testImages/.JFIF';
+import mashroomSoup from '../../assets/images/testImages/грибной крем суп.jpg';
+import gulyashSoup from '../../assets/images/testImages/суп гуляш.jfif';
+import pumpkinSoup from '../../assets/images/testImages/тыквенный крем суп с моцареллой гальбани.jfif';
+import meatAssorti from '../../assets/images/testImages/мясное ассорти (2).jpg';
+import margaritta from '../../assets/images/testImages/маргарита.jpg';
+import huntHalapen from '../../assets/images/testImages/Охотничья с халапеньо.jpg';
+import pepperoni from '../../assets/images/testImages/пепперони.jpg';
+import toskana from '../../assets/images/testImages/тоскана.jpg';
+import withVetchina from '../../assets/images/testImages/с ветчиной.jpg';
+import cesar from '../../assets/images/testImages/цезарь.jpg';
+import foccacha from '../../assets/images/testImages/фокачча с чесноком.jpg';
+import shashlichnaya from '../../assets/images/testImages/Шашлычная.jpg';
+import alfredo from '../../assets/images/testImages/альфредо.jpg';
+import mushroomAssorti from '../../assets/images/testImages/грибное ассорти.jpg';
+import hawai from '../../assets/images/testImages/Гавайская.jpg';
+import carbonaro from '../../assets/images/testImages/карбонара.jpg';
+import chickenPesto from '../../assets/images/testImages/куриная песто.jpg';
+import chickenBarbeku from '../../assets/images/testImages/курица барбекю.jpg';
+import seaStar from '../../assets/images/testImages/Звезда моря.jpg';
+import saladWithYogurt from '../../assets/images/testImages/Салат с йогуртом и зернами граната.jfif';
+import huntSalad from '../../assets/images/testImages/салат охотничий.jpg';
+import saladTolyata from '../../assets/images/testImages/салат тальята.jpg';
+import saladCesar from '../../assets/images/testImages/салат цезарь.jpg';
+import saladPumpkin from '../../assets/images/testImages/микс зелени с запеченной тыквой.jfif';
+import saladSemga from '../../assets/images/testImages/Микс зелени с картофелем и копченой семгой.jfif';
+import saladGreece from '../../assets/images/testImages/салат греческий.jpg';
+import saladWithGranat from '../../assets/images/testImages/салат из цветной капусты с зернами граната.jfif';
+import saladKinoa from '../../assets/images/testImages/салат киноа с рукколой.jfif';
 // Images
 
 const menu = {
@@ -35,20 +59,20 @@ const menu = {
     {
       name: 'Маргарита',
       description: 'фирменный пицца-соус, сыр Моцарелла, томаты черри',
-      image: 'margarita',
+      image: margaritta,
       price: 1190
     },
     {
       name: 'Мясное ассорти с халапенью',
       description:
         'фирменный пицца-соус, сыр Моцарелла, говядина копчёная, фарш говяжий, ветчина, оливки, колбаса Пепперони, перец халапеньо',
-      image: 'cold cuts with jalapeno',
+      image: meatAssorti,
       price: 2490
     },
     {
       name: 'Пепперони',
       description: 'фирменный пицца-соус, сыр Моцарелла, пепперони',
-      image: 'pepperoni',
+      image: pepperoni,
       price: 1950
     },
     {
@@ -60,7 +84,7 @@ const menu = {
     {
       name: 'Грибы с ветчиной',
       description: 'соус Рикотта, сыр Чеддер, сыр Моцарелла, сыр Пармезан',
-      image: 'mushroomsWithHam',
+      image: withVetchina,
       price: 2060
     },
     {
@@ -73,25 +97,25 @@ const menu = {
       name: 'Курица Барбекю',
       description:
         'сыр Моцарелла, соус Рикотта, курица копчённая, говядина холодного копчения, красный лук, грибы вешенки, соус Барбекю',
-      image: 'barbecue Chicken',
+      image: chickenBarbeku,
       price: 1890
     },
     {
       name: 'Курица, песто',
       description: 'фирменный пицца соус, сыр Моцарелла, куриное филе, соус Песто',
-      image: 'chicken, pesto',
+      image: chickenPesto,
       price: 1650
     },
     {
       name: 'Охотничья с халапенью',
       description: 'фирменный пицца соус, сыр Моцарелла, колбаски охотничьи, перец халапеньо(по желанию)',
-      image: 'hunting with jalapeno',
+      image: huntHalapen,
       price: 1790
     },
     {
       name: 'Звезда моря',
       description: 'соус Рикотта, сыр Моцарелла, креветки, семга, вяленые черри',
-      image: 'star of the Sea',
+      image: seaStar,
       price: 2400
     },
     {
@@ -122,45 +146,45 @@ const menu = {
     {
       name: 'Альфредо',
       description: 'соус Альфредо, сыр Моцарелла, шампиньоны, куриное филе, томаты черри, шпинат',
-      image: 'alfredo',
+      image: alfredo,
       price: 1850
     },
     {
       name: 'Грибное Ассорти',
       description: 'сыр Моцарелла, соус Альфредо, грибы вешенки, опята, микс перцев',
-      image: 'mushroomAssorted',
+      image: mushroomAssorti,
       price: 1890
     },
     {
       name: 'Пицца Цезарь',
       description: 'фирменный пицца-соус, сыр Моцарелла, куриное филе, томаты черри, соус Цезарь, салат Айсберг',
-      image: 'pizza Caesar',
+      image: cesar,
       price: 2210
     },
 
     {
       name: 'Карбонара',
       description: 'сыр Моцарелла, соус Рикатта, ветчина, яйцо, перец красный, сыр Пармезан',
-      image: 'carbonaro',
+      image: carbonaro,
       price: 1800
     },
     {
       name: 'Тоскана',
       description: 'фирменный пицца-соус, сыр Моцарелла Гальбани, томаты черри, соус Песто',
-      image: 'tuscany',
+      image: toskana,
       price: 2500
     },
     {
       name: 'Шашлычная',
       description:
         'фирменный пицца-соус, сыр Моцарелла, шашлык из баранины, помидоры черри, маринованый репчатый лук, халапеньо, соус барбекю',
-      image: 'kebab pizza',
+      image: shashlichnaya,
       price: 2250
     },
     {
       name: 'Гавайская',
       description: 'соус Рикотта, сыр Моцарелла, курица барбекю, ананас',
-      image: 'hawaiian',
+      image: hawai,
       price: 1800
     },
     {
@@ -225,7 +249,7 @@ const menu = {
     {
       name: 'Альо с чесноком',
       description: '',
-      image: '',
+      image: foccacha,
       price: 250
     }
   ],
@@ -397,7 +421,7 @@ const menu = {
     {
       name: 'Карбонара с колбасками',
       description: 'Феттучини в сливочном соусе и говяжьими колбасками',
-      image: fettuchiniBeef,
+      image: carbonaro,
       price: 1390
     }
   ],
@@ -447,7 +471,7 @@ const menu = {
     {
       name: 'Микс салата',
       description: '',
-      image: '',
+      image: saladSemga,
       price: 590
     },
     {
@@ -1406,7 +1430,7 @@ const menu = {
     {
       name: 'Грибной крем-суп',
       description: 'крем-пюре из шампиньонов и овощей, томленные в сливках',
-      image: 'mushroomSoup',
+      image: mashroomSoup,
       price: 990
     },
     {
@@ -1442,14 +1466,14 @@ const menu = {
     {
       name: 'Суп гуляш',
       description: 'густой суп с пекантной остротой с картофелем, говядиной, луком, морковью и чесноком',
-      image: 'gulashSoup',
+      image: gulyashSoup,
       price: 890
     },
     {
       name: 'Тыквенный крем-суп с моцареллой Гальбани',
       description:
         'тыква, лук порей, овощной бульон, оливковое масло, сыр моцарелла, чеснок, соль, мускатный орех, черный перец, апельсин',
-      image: 'pumpkinSoup',
+      image: pumpkinSoup,
       price: 890
     }
   ],
@@ -1605,50 +1629,44 @@ const menu = {
     {
       name: 'Баклажаны с йогуртом и зернами граната',
       description: '',
-      image: '',
+      image: saladWithYogurt,
       price: 1490
     },
     {
       name: 'Салат Охотничий',
       description: 'ломтики говяди и брынзы, чесночные крутоны с соусом на основе дижонской горчицы',
-      image: 'huntingSalad',
+      image: huntSalad,
       price: 1290
     },
     {
       name: 'Салат Тальята',
       description:
         'обжаренная говяжья вырезка с ломтиками картофеля, шампиньонов и микс салата, заправленная гранатовым соусом и Пармезан',
-      image: '',
+      image: saladTolyata,
       price: 1590
     },
     {
       name: 'Салат Греческий с сыром Фета',
       description: '',
-      image: '',
-      price: 1190
-    },
-    {
-      name: 'Салат Греческий с сыром Фета',
-      description: '',
-      image: '',
+      image: saladGreece,
       price: 1190
     },
     {
       name: 'Салат Цезарь с курицей',
       description: '',
-      image: '',
+      image: saladCesar,
       price: 1390
     },
     {
       name: 'Салат Цезарь с сёмгой',
       description: '',
-      image: '',
+      image: saladCesar,
       price: 1690
     },
     {
       name: 'Салат из цветной капусты с зернами граната',
       description: '',
-      image: '',
+      image: saladWithGranat,
       price: 1190
     },
     {
@@ -1659,12 +1677,12 @@ const menu = {
     },
     {
       name: 'Салат Киноа с рукколой',
-      image: 'kinaoSalad',
+      image: saladKinoa,
       price: 1190
     },
     {
       name: 'Микс зелени с запеченной тыквой',
-      image: 'bakedPumpkin',
+      image: saladPumpkin,
       price: 1190
     }
   ],

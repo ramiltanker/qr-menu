@@ -78,10 +78,10 @@ function Focaccia(props) {
   return (
     <section className={styles.menu}>
       <TransitionGroup className={styles.box} component="div">
-        {renderCards.map(({ name, description, price }, index) => {
+        {renderCards.map(({ name, description, price, image }, index) => {
           return (
             <CSSTransition timeout={300} classNames="card" key={index}>
-              <Card name={name} text={description} price={price} key={index} />
+              <Card name={name} text={description} price={price} key={index} image={image} />
             </CSSTransition>
           );
         })}
